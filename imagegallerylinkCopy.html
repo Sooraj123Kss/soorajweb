@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@keyframes fadeout
+{
+from{opacity:0;}
+top{opacity:1;}
+}
+
+header
+{
+background: #0c8ecb; 
+width: 40%;
+margin: auto;
+color: #ecf0f1; 
+text-align: center;
+font-size: 50px;
+padding: 20px;
+margin-top: 10px;
+margin-bottom: 30px;
+font-family: "Arial Black", sans-serif;
+box-shadow: 15px 15px 25px #3498db;
+transition: 0.5s;
+border-radius: 20px;
+}
+
+header:hover
+{
+box-shadow: 10px 10px 30px #cb0ccb;
+}
+
+.pic
+{
+width: 20%;
+border-radius: 20px;
+margin: 80px;
+box-shadow: 10px 10px 10px cyan;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pic:hover
+{
+transform: scale(1.5);
+cursor: pointer;
+box-shadow: 10px 10px 30px rgba(0, 0, 5, 0.5);
+}
+
+body
+{
+background-color:"";
+}
+
+  /* Mobile devices (width up to 600px) */
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: #222;
+                font-size: 10px;
+            }
+
+            .pic {
+                width: 80%;
+                margin: 20px;
+            }
+        }
+
+        /* Tablets (width between 601px and 1024px) */
+        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+            body {
+                background-color: #f8c471;
+                font-size: 15px;
+            }
+
+            .pic {
+                width: 40%;
+                margin: 40px;
+            }
+        }
+
+        /* Small desktops (width between 1025px and up) */
+        @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+            body {
+                background-color: #D2B4DE;
+                font-size: 16px;
+            }
+
+            .pic {
+                width: 25%;
+                margin: 60px;
+            }
+        }
+
+        /* Extra-large screens (width greater than 1440px) */
+        @media only screen and (min-width: 1441px) {
+            body {
+                background-color: #f1948a;
+                font-size: 18px;
+            }
+
+            .pic {
+                width: 20%;
+                margin: 80px;
+            }
+        }
+
+</style>
+</head>
+
+<body>
+<header>
+
+<div id="box2">
+
+<a href="practice.html"><img src="images/backarrow.png"></a>
+<a href="index.html">Home</a>
+
+</div>
+
+Image Gallery
+
+</header>
+
+<header>
+Profile Gallery
+
+</header>
+
+
+
+<a href="p1.html">
+<img src="images/p1.jpg" class="pic">
+</a>
+
+
+
+<a href="p2.html">
+<img src="images/p2.jpg" class="pic">
+</a>
+
+
+
+<a href="p3.html">
+<img src="images/p3.jpg" class="pic">
+</a>
+
+
+
+<a href="p4.html">
+<img src="images/p4.jpg" class="pic">
+</a>
+
+
+
+<a href="p5.html">
+<img src="images/p5.jpg" class="pic">
+</a>
+
+
+
+<a href="p6.html">
+<img src="images/p6.jpg" class="pic">
+</a>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
