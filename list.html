@@ -7,29 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <style>
-        #main {
-            background: #001F3F;
-            width: 400px;
-            padding: 50px;
-            box-shadow: 10px 10px 10px gray;
-            margin: auto;
-            margin-top: 20px;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4 {
-            color: #FFD700;
-        }
-
-        header {
-            background: #001F3F;
-            font-size: 100px;
-            text-align: center;
-            color: #FF007F;
-        }
-
         body {
             background-color: #001F3F;
             background-image: url('webbg.png');
@@ -39,33 +16,50 @@
             background-position: center;
         }
 
-        hr {
-            color: #B76E79;
-            size: 5;
+        header {
+            background: #001F3F;
+            font-size: 100px;
+            text-align: center;
+            color: #FF007F;
+            font-family: "Great Vibes", system-ui;
         }
 
-        ol,
-        ul li {
+        #main {
+            background: #001F3F;
+            width: 400px;
+            padding: 50px;
+            box-shadow: 10px 10px 10px gray;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        h1, h2, h3, h4 {
+            color: #FFD700;
+        }
+
+        ol, ul li {
             color: #FFD700;
             font-size: 30px;
         }
 
-        .mystyle {
-            font-family: "Great Vibes", system-ui;
+        hr {
+            color: #B76E79;
         }
 
         .back-arrow {
             position: fixed;
             top: 10px;
             left: 10px;
-            text-decoration: none;
-            color: #FFD700;
             font-size: 24px;
+            color: #FFD700;
+            text-decoration: none;
         }
 
         .back-arrow img {
             vertical-align: middle;
             margin-right: 5px;
+            width: 30px;
+            height: auto;
         }
 
         .back-arrow:hover {
@@ -77,15 +71,111 @@
 <body>
     
     <a href="practice.html" class="back-arrow">
-        <img src="backarrow.png" alt="Back" style="width:30px;height:auto;"> Back
+        <img src="backarrow.png" alt="Back"> Back
     </a>
 
-    <header class="mystyle">
-        List in HTML
-    </header>
+    <header>List in HTML</header>
     <div id="main">
         <h2>Creating Reference</h2>
-        
+        <h3>Type of List</h3>
+
+        <h2>Ordered List Example</h2>
+        <ol>
+            <li>India</li>
+            <li>USA</li>
+            <li>UK</li>
+            <li>Japan</li>
+        </ol>
+
+        <h2>Unordered List Example</h2>
+        <ul>
+            <li>India</li>
+            <li>USA</li>
+            <li>UK</li>
+            <li>Japan</li>
+        </ul>
+
+        <h2>Variation in Lists</h2>
+        <ol start="50">
+            <li>India</li>
+            <li>USA</li>
+            <li>UK</li>
+            <li>Japan</li>
+        </ol>
+
+        <hr />
+
+        <ol type="A">
+            <li>India</li>
+            <li>USA</li>
+            <li>UK</li>
+            <li>Japan</li>
+        </ol>
+
+        <ol type="a">
+            <li>India</li>
+            <li>USA</li>
+            <li>UK</li>
+            <li>Japan</li>
+        </ol>
+
+        <hr />
+
+        <ul type="circle">
+            <li>India</li>
+            <li>USA</li>
+            <li>UK</li>
+            <li>Japan</li>
+        </ul>
+
+        <ul type="square">
+            <li>India</li>
+            <li>USA</li>
+            <li>UK</li>
+            <li>Japan</li>
+        </ul>
+
+        <hr />
+
+        <h2>Nested List</h2>
+        <ol>
+            <li>India
+                <ol type="A">
+                    <li>North
+                        <ul type="circle">
+                            <li>Delhi</li>
+                            <li>Punjab</li>
+                            <li>Haryana</li>
+                        </ul>
+                    </li>
+                    <li>West</li>
+                    <li>East</li>
+                    <li>South</li>
+                </ol>
+            </li>
+            <li>USA</li>
+            <li>UK</li>
+            <li>Japan</li>
+        </ol>
+
+        <hr />
+
+        <h2>Custom Lists</h2>
+        <h4>No Bullet Points</h4>
+        <ol style="list-style:none;padding:0px;">
+            <li>Home</li>
+            <li>Products</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ol>
+
+        <h4>Custom Bullet Points</h4>
+        <ol style="list-style-image:url(webbg.png);">
+            <li>Home</li>
+            <li>Products</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ol>
     </div>
 </body>
 
