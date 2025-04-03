@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <style>
         #main {
-            background: #001F3F; 
+            background: #001F3F;
             width: 400px;
             padding: 50px;
             box-shadow: 10px 10px 10px gray;
@@ -24,144 +24,68 @@
         }
 
         header {
-            background: #001F3F; 
+            background: #001F3F;
             font-size: 100px;
             text-align: center;
-            color:#FF007F; 
+            color: #FF007F;
         }
 
         body {
-             background-color: #001F3F;
-             background-image: url('webbg.png'); 
-             background-size: cover; 
-             background-repeat: no-repeat; 
-             background-attachment: fixed; 
-             background-position: center; 
-             }
-        
+            background-color: #001F3F;
+            background-image: url('webbg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
 
         hr {
-            color: #B76E79; 
+            color: #B76E79;
             size: 5;
         }
 
         ol,
         ul li {
-            color: #FFD700; 
+            color: #FFD700;
             font-size: 30px;
         }
 
         .mystyle {
             font-family: "Great Vibes", system-ui;
         }
+
+        .back-arrow {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            text-decoration: none;
+            color: #FFD700;
+            font-size: 24px;
+        }
+
+        .back-arrow img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .back-arrow:hover {
+            color: #FF007F;
+        }
     </style>
 </head>
 
 <body>
+    
+    <a href="practice.html" class="back-arrow">
+        <img src="backarrow.png" alt="Back" style="width:30px;height:auto;"> Back
+    </a>
+
     <header class="mystyle">
         List in HTML
     </header>
     <div id="main">
         <h2>Creating Reference</h2>
-        <h3>Type of list</h3>
-        <h2>Order List Example</h2>
-        <ol>
-            <li>India</li>
-            <li>Usa</li>
-            <li>UK</li>
-            <li>Japan</li>
-        </ol>
-        <h2>Unorder List Example</h2>
-        <ul>
-            <li>India</li>
-            <li>Usa</li>
-            <li>UK</li>
-            <li>Japan</li>
-        </ul>
-        <h2>Variation in List</h2>
-        <ol start="50">
-            <li>India</li>
-            <li>Usa</li>
-            <li>UK</li>
-            <li>Japan</li>
-        </ol>
-        <hr />
-        <ol type="l">
-            <li>India</li>
-            <li>Usa</li>
-            <li>UK</li>
-            <li>Japan</li>
-        </ol>
-        <ol type="i">
-            <li>India</li>
-            <li>Usa</li>
-            <li>UK</li>
-            <li>Japan</li>
-        </ol>
-        <hr />
-        <ol type="A">
-            <li>India</li>
-            <li>Usa</li>
-            <li>UK</li>
-            <li>Japan</li>
-        </ol>
-        <ol type="a">
-            <li>India</li>
-            <li>Usa</li>
-            <li>UK</li>
-            <li>Japan</li>
-        </ol>
-        <hr />
-        <ul type="circle">
-            <li>India</li>
-            <li>Usa</li>
-            <li>UK</li>
-            <li>Japan</li>
-        </ul>
-        <ul type="square">
-            <li>India</li>
-            <li>Usa</li>
-            <li>UK</li>
-            <li>Japan</li>
-        </ul>
-        <hr />
-        <h2>Nested List</h2>
-        <ol>
-            <li>India
-                <ol type="A">
-                    <li>North
-                        <ul type="circle">
-                            <li>Delhi</li>
-                            <li>India</li>
-                            <li>Punjab</li>
-                            <li>Haryana</li>
-                        </ul>
-                    </li>
-                    <li>West</li>
-                    <li>East</li>
-                    <li>South</li>
-                </ol>
-            </li>
-            <li>Usa</li>
-            <li>UK</li>
-            <li>Japan</li>
-        </ol>
-        <hr />
-        <h2>Custom List</h2>
-        <h4>No Bullet Point or No and Remove Padding</h4>
-        <ol style="list-style:none;padding:0px;">
-            <li>Home</li>
-            <li>Product</li>
-            <li>Services</li>
-            <li>Japan</li>
-        </ol>
-        <h4>Custom Bullet Point</h4>
-        <ol style="list-style-image:url(webbg.png)">
-            <li>Home</li>
-            <li>Product</li>
-            <li>Services</li>
-            <li>Japan</li>
-        </ol>
+        
     </div>
 </body>
 
