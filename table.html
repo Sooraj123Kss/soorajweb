@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <title>3D Travel Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f4f9;
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            width: 80%;
+            margin: 20px auto;
+            overflow-x: auto;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: skyblue;
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            background-color: #ffffff;
+            box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.15); 
+            border-radius: 10px;
+            overflow: scroll-auto;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: gold;
+            padding: 15px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+        }
+
+        td {
+            border-bottom: 2px solid #ddd;
+            padding: 12px;
+            transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+        }
+
+        td:hover {
+            background-color: lightgreen;
+            transform: scale(1.05); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            cursor: pointer;
+            color: gold;
+        }
+
+        tr:hover {
+            background-color: #e8f5e9; 
+        }
+
+        @media screen and (max-width: 768px) {
+            th, td {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            th, td {
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
+
+        tfoot td {
+            background-color: #eeeeee;
+            font-weight: bold;
+            padding: 12px;
+            text-align: center;
+            border-top: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Travel ID</th>
+                    <th>Traveler Name</th>
+                    <th>Destination</th>
+                    <th>Budget (USD)</th>
+                    <th>Start Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>John Doe</td><td>Paris</td><td>2000</td><td>2025-04-10</td></tr>
+                <tr><td>2</td><td>Jane Smith</td><td>Tokyo</td><td>3000</td><td>2025-05-01</td></tr>
+                <tr><td>3</td><td>Michael Lee</td><td>Cairo</td><td>1500</td><td>2025-03-15</td></tr>
+                <tr><td>4</td><td>Emily Davis</td><td>Sydney</td><td>2500</td><td>2025-06-10</td></tr>
+                <tr><td>5</td><td>Chris Brown</td><td>London</td><td>1800</td><td>2025-07-01</td></tr>
+                <tr><td>6</td><td>Anna Wilson</td><td>Berlin</td><td>2200</td><td>2025-08-05</td></tr>
+                <tr><td>7</td><td>David Kim</td><td>Rome</td><td>1700</td><td>2025-09-15</td></tr>
+                <tr><td>8</td><td>Sarah Johnson</td><td>Dubai</td><td>2600</td><td>2025-10-20</td></tr>
+                <tr><td>9</td><td>Matthew Clark</td><td>Bangkok</td><td>1400</td><td>2025-11-05</td></tr>
+                <tr><td>10</td><td>Emma White</td><td>Amsterdam</td><td>2100</td><td>2025-12-10</td></tr>
+                <tr><td>11</td><td>Noah Martinez</td><td>Singapore</td><td>2800</td><td>2025-01-15</td></tr>
+                <tr><td>12</td><td>Sophia Lee</td><td>Madrid</td><td>2300</td><td>2025-02-20</td></tr>
+                <tr><td>13</td><td>Oliver Brown</td><td>Hanoi</td><td>1200</td><td>2025-03-05</td></tr>
+                <tr><td>14</td><td>Ava Wilson</td><td>Seoul</td><td>2400</td><td>2025-04-25</td></tr>
+                <tr><td>15</td><td>James Green</td><td>Toronto</td><td>2700</td><td>2025-05-30</td></tr>
+                <tr><td>16</td><td>Isabella Young</td><td>New York</td><td>3100</td><td>2025-06-15</td></tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">End of Report</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
