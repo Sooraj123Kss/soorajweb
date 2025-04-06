@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>List</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,11 +67,54 @@
         .back-arrow:hover {
             color: #FF007F;
         }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header {
+                font-size: 70px;
+            }
+
+            #main {
+                width: 90%;
+                padding: 20px;
+            }
+
+            ol, ul li {
+                font-size: 24px;
+            }
+
+            .back-arrow {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 50px;
+            }
+
+            #main {
+                width: 100%;
+                padding: 10px;
+            }
+
+            ol, ul li {
+                font-size: 18px;
+            }
+
+            .back-arrow img {
+                width: 20px;
+            }
+
+            .back-arrow {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 
 <body>
-    
+
     <a href="practice.html" class="back-arrow">
         <img src="backarrow.png" alt="Back"> Back
     </a>
