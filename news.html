@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<title>News</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+@keyframes blink {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+
+@keyframes colorLoop {
+  0% { color: #FF5733; background: #F7DC6F; }
+  25% { color: #33FF57; background: #1F618D; }
+  50% { color: #FFD700; background: #FF4500; }
+  75% { color: #8E44AD; background: #76D7C4; }
+  100% { color: #FF1493; background: #98FB98; }
+}
+
+@keyframes moveText {
+  0% { transform: translateX(10); }
+  25% { transform: translateX(25%); }
+  50% { transform: translateX(50%); }
+  75% { transform: translateX(25%); }
+  100% { transform: translateX(0); }
+}
+
+body {
+  background-image: url('images/bgweb.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#logo {
+  color: purple;
+  font-size: 50px;
+  font-family: 'Times New Roman', serif;
+  animation: blink 2s infinite alternate;
+}
+
+#mes {
+  color: white;
+  font-size: 20px;
+  font-family: 'Times New Roman', serif;
+  width: 90%;
+  height: 100px;
+  padding: 20px;
+  border-radius: 25px;
+  margin-top: 30px;
+  border: 1px white solid;
+  animation: colorLoop 10s linear infinite;
+  overflow: hidden;
+}
+
+#strip {
+  box-shadow: 0px 5px 20px cyan;
+  overflow: hidden;
+  width: 60%;
+  font-family: 'Times New Roman', serif;
+  background: violet;
+  margin: auto;
+  animation: mycolor 40s linear reverse, moveText 5s linear infinite;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+#text {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  border-top: 2px solid teal;
+}
+
+footer nav a {
+  color: cyan;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  #logo {
+    font-size: 40px;
+  }
+  #mes {
+    font-size: 18px;
+  }
+  #strip {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #logo {
+    font-size: 30px;
+  }
+  #mes {
+    font-size: 16px;
+    padding: 15px;
+    height: auto;
+  }
+  #strip {
+    width: 90%;
+    font-size: 16px;
+  }
+  #text {
+    font-size: 16px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #logo {
+    font-size: 24px;
+  }
+  #mes {
+    font-size: 14px;
+    padding: 10px;
+    width: 95%;
+  }
+  #strip {
+    width: 100%;
+    font-size: 14px;
+  }
+  footer nav a {
+    font-size: 12px;
+    padding: 3px;
+  }
+}
+</style>
+</head>
+
+<body>
+<a href="practice.html" class="back-arrow">
+      <img src="backarrow.png" alt="Back"> Back
+</a>
+<div id="logo">
+  Bluestone Product
+</div>
+
+<h2 style="color:white;">Sale in Amazon</h2>
+
+<div id="mes">
+  Amazon.com, Inc. is a multinational technology and e-commerce company based in the United States. Founded in 1994 by Jeff Bezos, Amazon began as an online bookstore and quickly expanded its offerings to include a wide range of products and services.
+</div>
+
+<img src="images/amazon.jpeg" alt="News Image" style="display: block; margin: 20px auto; width:auto; height:600px; border: 2px solid white; border-radius: 15px;">
+
+<div id="strip">
+  <span id="text">
+    Amazon.com, Inc. is a multinational technology and e-commerce company based in the United States.
+  </span>
+</div>
+
+<div style="height:100px;"></div>
+<hr color="black" size="10" width="100%">
+<footer>
+  <p>Site Map</p>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="practice.html">Practice</a> |
+    <a href="https://www.figma.com/design/ytM4WuFLIiODZvHIVlhyw6/premia-luxury?node-id=7-2&p=f&t=hk9H6EDNOGSw2pTy-0" target="_blank">Figma</a> |
+    <a href="https://www.behance.net/kssooraj1" target="_blank">Behance</a> |
+    <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" target="_blank">Case Study</a>
+  </nav>
+  <nav>
+    <a href="practice.html">Practice</a> |
+    <a href="imagegallerylinkcopy.html">Image Gallery</a> |
+    <a href="list.html">HTML List</a> |
+    <a href="menu.html">Menu</a> |
+    <a href="table.html">Table</a> |
+    <a href="loginform.html">Login Form</a>
+  </nav>
+  <p>&copy; 2025 K S Sooraj. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
