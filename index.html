@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <style>
+        
         body {
             background-color: #98d2f7;
             margin: 0;
@@ -17,6 +18,7 @@
             font-weight: bold;
             font-style: italic;
             text-align: center;
+            margin: 20px 0;
         }
 
         .banner {
@@ -25,6 +27,57 @@
             padding: 50px 20px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
             border-radius: 10px;
+        }
+
+       
+        #menu {
+            display: block;
+            font-size: 40px;
+            color: white;
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 10px auto;
+            cursor: pointer;
+            max-width: 120px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        #menu-checkbox {
+            display: none;
+        }
+
+        nav {
+            display: none;
+            flex-direction: column;
+            background-color: black;
+            border: 1px solid teal;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+            margin: 10px auto;
+        }
+
+        nav a {
+            transition: 0.5s;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            background: cyan;
+            color: black;
+        }
+
+        #menu-checkbox:checked + nav {
+            display: flex;
         }
 
         #main {
@@ -46,48 +99,12 @@
             height: auto;
         }
 
-        nav {
-            text-align: center;
-            font-family: Arial, sans-serif;
-            background-color: black;
-            border: 1px solid teal;
-            border-radius: 10px;
-            padding: 10px;
-            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-            margin: 10px auto;
-            width: fit-content;
-        }
-
-        nav a {
-            transition: 0.5s;
-            text-decoration: none;
-            color: white;
-            padding: 10px;
-            margin: 5px;
-            display: inline-block;
-            border-radius: 5px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-            background: cyan;
-            color: black;
-        }
-
-        nav a:active {
-            color: purple;
-        }
-
         hr {
             color: black;
             size: 10;
             width: 100%;
         }
-        @media (max-width: 1024px) {
-            #menu{
-            display:none;
-            }
-        
+
         @media (max-width: 768px) {
             .banner {
                 background-image: none;
@@ -98,78 +115,56 @@
                 padding: 15px;
             }
 
-            #menu {
-                display: block;
-                font-size: 40px;
-                color: white;
-                margin: 10px 20px;
-            }
-
-            nav ol {
-                flex-direction: column;
-                gap: 10px;
-                display: none;
-            }
-
-            nav:hover ol {
-                display: flex;
-            }
-
-            nav ol li {
-                width: 80%;
-                margin: auto;
-            }
-        }
-
-        @media (max-width: 480px) {
             h2 {
                 font-size: 20px;
             }
 
-            nav {
-                width: 100%;
-                margin: 0;
-            }
-
             nav a {
-                padding: 5px;
-                font-size: 12px;
+                font-size: 14px;
             }
+        }
 
+        @media (max-width: 480px) {
             #main {
                 font-size: 14px;
                 padding: 10px;
+            }
+
+            nav a {
+                font-size: 12px;
+                padding: 5px;
             }
         }
     </style>
 </head>
 <body>
     <h2>K S Sooraj</h2>
-    <span id="menu">&#9776;</span>
+  
+    <label id="menu" for="menu-checkbox">&#9776; Menu</label>
+    <input type="checkbox" id="menu-checkbox">
+
     <nav>
-        <ol>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="practice.html">Practice</a></li>
-            <li><a href="https://www.behance.net/kssooraj1">Behance</a></li>
-            <li><a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study">Case Study</a></li>
-            <li><a href="#">Project</a></li>
-        </ol>
+        <a href="index.html">Home</a>
+        <a href="practice.html">Practice</a>
+        <a href="https://www.behance.net/kssooraj1" target="_blank">Behance</a>
+        <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" target="_blank">Case Study</a>
+        <a href="#">Project</a>
     </nav>
+
+ 
     <div class="banner">
         <img src="me.png" alt="Profile Picture">
     </div>
+
+   
     <div id="main">
-        <p>
-            My name is K S Sooraj, I'm a passionate UI/UX Designer who loves transforming ideas into visually appealing and user-friendly designs.
-        </p>
-        <p>
-            My journey in the design world is fueled by curiosity and a constant desire to learn and grow.
-        </p>
-        <p>
-            When I'm not designing, you can find me exploring the latest design trends, experimenting with new tools, or enjoying a good laugh over some quirky humor. Let's create something amazing together!
-        </p>
+        <p>My name is K S Sooraj, I'm a passionate UI/UX Designer who loves transforming ideas into visually appealing and user-friendly designs.</p>
+        <p>My journey in the design world is fueled by curiosity and a constant desire to learn and grow.</p>
+        <p>When I'm not designing, you can find me exploring the latest design trends, experimenting with new tools, or enjoying a good laugh over some quirky humor. Let's create something amazing together!</p>
     </div>
+
     <hr>
+    
     <footer style="background-color: black; color: white; text-align: center; padding: 15px; font-family: Arial, sans-serif; border-top: 2px solid teal;">
         <p>Site Map</p>
         <nav>
