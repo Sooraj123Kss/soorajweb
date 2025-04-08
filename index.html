@@ -102,10 +102,31 @@
             padding: 15px;
         }
 
-        nav a {
-            padding: 5px;
-            font-size: 14px;
+       #nav {
+            display: block;
+            font-size: 40px;
+            color: white;
+            margin: 10px 20px;
         }
+
+        nav ol {
+            flex-direction: column;
+            gap: 10px;
+            display: none;
+        }
+
+        nav:hover ol {
+            display: flex;
+        }
+
+        nav ol li {
+            width: 80%;
+            margin: auto;
+        }
+    }
+
+
+        
     }
 
     @media (max-width: 480px) {
@@ -149,9 +170,9 @@
     </nav>
     
     <div id="main">
-        <p>My name is K S Sooraj I'm a passionate UI/UX Designer who loves transforming ideas into visually appealing and user-friendly designs. My journey in the design world is fueled by curiosity and a constant desire to learn and grow. I'm always ready to dive into new projects and explore innovative ways to solve problems.
+        <p>My name is K S Sooraj I'm a passionate UI/UX Designer who loves transforming ideas into visually appealing and user-friendly designs.</p> <p> My journey in the design world is fueled by curiosity and a constant desire to learn and grow.</p> <p>I'm always ready to dive into new projects and explore innovative ways to solve problems.</p>
 
-        When I'm not designing, you can find me exploring the latest design trends, experimenting with new design tools, or enjoying a good laugh over some quirky humor. Let's create something amazing together!</p>
+       </p> When I'm not designing, you can find me exploring the latest design trends, experimenting with new design tools, or enjoying a good laugh over some quirky humor. Let's create something amazing together!</p>
     </div>
     <hr color="black" size="10" width="100%"><footer style="background-color: black; color: white; text-align: center; padding: 15px; font-family: Arial, sans-serif; border-top: 2px solid teal;">
         <p>Site Map</p>
