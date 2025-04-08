@@ -2,203 +2,180 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Home</title>
     <style>
-    body {
-        background-color: #98d2f7;
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
+        body {
+            background-color: #98d2f7;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-    h2 { 
-        color: black;
-        font-family: 'Arial Black', Arial, sans-serif;
-        text-decoration: underline;
-        font-weight: bold;
-        font-style: italic;
-        text-align: center;
-    }
+        h2 {
+            color: black;
+            font-family: 'Arial Black', Arial, sans-serif;
+            text-decoration: underline;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+        }
 
-    .banner {
-        background-image: url("banner.jpg"); 
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        text-align: center;
-        padding: 50px 20px;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-        border-radius: 10px;
-    }
-
-    #main {
-        width: 90%;
-        margin: auto;
-        font-size: 18px;
-        border: 1px solid black;
-        text-align: justify;
-        padding: 20px;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    img {
-        display: block;
-        margin: auto;
-        max-width: 100%;
-        height: auto;
-    }
-
-    nav {
-        text-align: center;
-        font-family: Arial, sans-serif;
-        background-color: black;
-        border: 1px solid teal;
-        border-radius: 10px;
-        padding: 10px;
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-        margin: 10px auto;
-        width: fit-content;
-    }
-
-    nav a {
-        transition: 0.5s;
-        text-decoration: none;
-        color: white;
-        padding: 10px;
-        margin: 5px;
-        display: inline-block;
-        border-radius: 5px;
-    }
-
-    nav a:hover {
-        text-decoration: underline;
-        background: cyan;
-        color: black;
-    }
-
-    nav a:active {
-        color: purple;
-    }
-
-    nav a:visited {
-        color: white;
-    }
-
-    hr {
-        color: black;
-        size: 10;
-        width: 100%;
-    }
-        
-    @media (max-width: 768px) {
         .banner {
-            background-image:none;
+            background: url("banner.jpg") center/cover no-repeat;
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
         }
 
         #main {
-            font-size: 16px;
-            padding: 15px;
-        }
-
-      #menu {
-            display: block;
-            font-size: 40px;
-            color: white;
-            margin: 10px 20px;
-        }
-
-        nav ol {
-            flex-direction: column;
-            gap: 10px;
-            display: none;
-        }
-
-        nav:hover ol {
-            display: flex;
-        }
-
-        nav ol li {
-            width: 80%;
+            width: 90%;
             margin: auto;
+            font-size: 18px;
+            border: 1px solid black;
+            text-align: justify;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
         }
 
-    }
-
-    @media (max-width: 480px) {
-        h2 {
-            font-size: 20px;
-        }
-        
-        .banner {
-            background-image:none;
+        img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            height: auto;
         }
 
         nav {
-            width: 100%;
-            margin: 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            border: 1px solid teal;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+            margin: 10px auto;
+            width: fit-content;
         }
 
         nav a {
-            padding: 5px;
-            font-size: 12px;
+            transition: 0.5s;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 5px;
         }
 
-        #main {
-            font-size: 14px;
-            padding: 10px;
+        nav a:hover {
+            text-decoration: underline;
+            background: cyan;
+            color: black;
         }
-    }
+
+        nav a:active {
+            color: purple;
+        }
+
+        hr {
+            color: black;
+            size: 10;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                background-image: none;
+            }
+
+            #main {
+                font-size: 16px;
+                padding: 15px;
+            }
+
+            #menu {
+                display: block;
+                font-size: 40px;
+                color: white;
+                margin: 10px 20px;
+            }
+
+            nav ol {
+                flex-direction: column;
+                gap: 10px;
+                display: none;
+            }
+
+            nav:hover ol {
+                display: flex;
+            }
+
+            nav ol li {
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 20px;
+            }
+
+            nav {
+                width: 100%;
+                margin: 0;
+            }
+
+            nav a {
+                padding: 5px;
+                font-size: 12px;
+            }
+
+            #main {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
     <h2>K S Sooraj</h2>
-     <span id="menu">&#9776;</span>
+    <span id="menu">&#9776;</span>
+    <nav>
         <ol>
             <li><a href="index.html">Home</a></li>
             <li><a href="practice.html">Practice</a></li>
             <li><a href="https://www.behance.net/kssooraj1">Behance</a></li>
-            <li><a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study">Case study</a></li>
+            <li><a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study">Case Study</a></li>
             <li><a href="#">Project</a></li>
         </ol>
-
-
+    </nav>
     <div class="banner">
         <img src="me.png" alt="Profile Picture">
     </div>
-
-    <nav>
-         <a href="practice.html">Practice</a>
-         <a href="https://www.figma.com/design/ytM4WuFLIiODZvHIVlhyw6/premia-luxury?node-id=7-2&p=f&t=hk9H6EDNOGSw2pTy-0" target="_blank">Figma</a>
-         <a href="https://www.behance.net/kssooraj1" target="_blank">Behance</a>
-         <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study">Case Study</a>
-    </nav>
-    
     <div id="main">
-        <p>My name is K S Sooraj I'm a passionate UI/UX Designer who loves transforming ideas into visually appealing and user-friendly designs.</p> <p> My journey in the design world is fueled by curiosity and a constant desire to learn and grow.</p> <p>I'm always ready to dive into new projects and explore innovative ways to solve problems.</p>
-
-       </p> When I'm not designing, you can find me exploring the latest design trends, experimenting with new design tools, or enjoying a good laugh over some quirky humor. Let's create something amazing together!</p>
+        <p>
+            My name is K S Sooraj, I'm a passionate UI/UX Designer who loves transforming ideas into visually appealing and user-friendly designs.
+        </p>
+        <p>
+            My journey in the design world is fueled by curiosity and a constant desire to learn and grow.
+        </p>
+        <p>
+            When I'm not designing, you can find me exploring the latest design trends, experimenting with new tools, or enjoying a good laugh over some quirky humor. Let's create something amazing together!
+        </p>
     </div>
-    <hr color="black" size="10" width="100%"><footer style="background-color: black; color: white; text-align: center; padding: 15px; font-family: Arial, sans-serif; border-top: 2px solid teal;">
+    <hr>
+    <footer style="background-color: black; color: white; text-align: center; padding: 15px; font-family: Arial, sans-serif; border-top: 2px solid teal;">
         <p>Site Map</p>
         <nav>
-            <a href="index.html" style="color: cyan; text-decoration: none;">Home</a> |
-            <a href="practice.html" style="color: cyan; text-decoration: none;">Practice</a> |
-            <a href="https://www.figma.com/design/ytM4WuFLIiODZvHIVlhyw6/premia-luxury?node-id=7-2&p=f&t=hk9H6EDNOGSw2pTy-0" target="_blank" style="color: cyan; text-decoration: none;">Figma</a> |
-            <a href="https://www.behance.net/kssooraj1" target="_blank" style="color: cyan; text-decoration: none;">Behance</a> |
-            <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" target="_blank" style="color: cyan; text-decoration: none;">Case Study</a>
-        </nav>
-        <nav>
-            <a href="practice.html" style="color: cyan; text-decoration: none;">Practice</a> |
-            <a href="imagegallerylinkcopy.html" style="color: cyan; text-decoration: none;">Image Gallery</a> |
-            <a href="list.html" style="color: cyan; text-decoration: none;">HTML List</a> |
-            <a href="menu.html" style="color: cyan; text-decoration: none;">Menu</a> |
-            <a href="table.html" style="color: cyan; text-decoration: none;">Table</a> |
-            <a href="news.html" style="color: cyan; text-decoration: none;">Creating text animation</a>
+            <a href="index.html" style="color: cyan;">Home</a> |
+            <a href="practice.html" style="color: cyan;">Practice</a> |
+            <a href="https://www.figma.com/design/ytM4WuFLIiODZvHIVlhyw6/premia-luxury?node-id=7-2&p=f&t=hk9H6EDNOGSw2pTy-0" target="_blank" style="color: cyan;">Figma</a> |
+            <a href="https://www.behance.net/kssooraj1" target="_blank" style="color: cyan;">Behance</a> |
+            <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" target="_blank" style="color: cyan;">Case Study</a>
         </nav>
         <p>&copy; 2025 K S Sooraj. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
