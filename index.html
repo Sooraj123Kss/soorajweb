@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <style>
-        
         body {
             background-color: #98d2f7;
             margin: 0;
@@ -29,7 +28,6 @@
             border-radius: 10px;
         }
 
-       
         #menu {
             display: block;
             font-size: 40px;
@@ -105,6 +103,31 @@
             width: 100%;
         }
 
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+            border-top: 2px solid teal;
+        }
+
+        footer nav {
+            display: flex;
+            justify-content: space-around;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        footer nav a {
+            color: cyan;
+            text-decoration: none;
+        }
+
+        footer nav a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
             .banner {
                 background-image: none;
@@ -139,40 +162,37 @@
 </head>
 <body>
     <h2>K S Sooraj</h2>
-  
     <label id="menu" for="menu-checkbox">&#9776; Menu</label>
     <input type="checkbox" id="menu-checkbox">
 
     <nav>
         <a href="index.html">Home</a>
         <a href="practice.html">Practice</a>
-        <a href="https://www.behance.net/kssooraj1" target="_blank">Behance</a>
-        <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" target="_blank">Case Study</a>
+        <a href="https://www.behance.net/kssooraj1" target="_blank" rel="noopener noreferrer">Behance</a>
+        <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" target="_blank" rel="noopener noreferrer">Case Study</a>
         <a href="#">Project</a>
     </nav>
 
- 
     <div class="banner">
         <img src="me.png" alt="Profile Picture">
     </div>
 
-   
     <div id="main">
         <p>My name is K S Sooraj, I'm a passionate UI/UX Designer who loves transforming ideas into visually appealing and user-friendly designs.</p>
         <p>My journey in the design world is fueled by curiosity and a constant desire to learn and grow.</p>
         <p>When I'm not designing, you can find me exploring the latest design trends, experimenting with new tools, or enjoying a good laugh over some quirky humor. Let's create something amazing together!</p>
     </div>
 
-    <hr>
-    
-    <footer style="background-color: black; color: white; text-align: center; padding: 15px; font-family: Arial, sans-serif; border-top: 2px solid teal;">
+    <hr />
+
+    <footer>
         <p>Site Map</p>
         <nav>
-            <a href="index.html" style="color: cyan;">Home</a> |
-            <a href="practice.html" style="color: cyan;">Practice</a> |
-            <a href="https://www.figma.com/design/ytM4WuFLIiODZvHIVlhyw6/premia-luxury?node-id=7-2&p=f&t=hk9H6EDNOGSw2pTy-0" target="_blank" style="color: cyan;">Figma</a> |
-            <a href="https://www.behance.net/kssooraj1" target="_blank" style="color: cyan;">Behance</a> |
-            <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" target="_blank" style="color: cyan;">Case Study</a>
+            <a href="index.html">Home</a>
+            <a href="practice.html">Practice</a>
+            <a href="https://www.figma.com/design/ytM4WuFLIiODZvHIVlhyw6/premia-luxury?node-id=7-2&p=f&t=hk9H6EDNOGSw2pTy-0" target="_blank" rel="noopener noreferrer">Figma</a>
+            <a href="https://www.behance.net/kssooraj1" target="_blank" rel="noopener noreferrer">Behance</a>
+            <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" target="_blank" rel="noopener noreferrer">Case Study</a>
         </nav>
         <p>&copy; 2025 K S Sooraj. All rights reserved.</p>
     </footer>
