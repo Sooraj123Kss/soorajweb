@@ -90,13 +90,13 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    background-color: black; /* Box background */
-    border: 3px solid teal; /* Box border */
-    border-radius: 10px; /* Rounded corners */
-    padding: 15px; /* Add padding inside the box */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Shadow for the box */
-    margin: 10px auto; /* Center box within the footer */
-    max-width: 90%; /* Ensure the box doesn't stretch too wide */
+    background-color: black; 
+    border: 3px solid teal; 
+    border-radius: 10px; 
+    padding: 15px; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
+    margin: 10px auto; 
+    max-width: 90%; 
 }
 
 footer nav a {
@@ -112,7 +112,7 @@ footer nav a:hover {
         
         @media (max-width: 768px) {
             #menu {
-                display: block; /* Show menu button for dropdown */
+                display: block; 
                 text-align: center;
                 background-color: black;
                 color: white;
@@ -124,11 +124,11 @@ footer nav a:hover {
             }
 
             #menu-checkbox {
-                display: block; /* Enable menu checkbox */
+                display: block; 
             }
 
             nav {
-                display: none; /* Hide nav by default for smaller screens */
+                display: none; 
                 flex-direction: column;
                 background-color: black;
                 padding: 15px;
@@ -137,7 +137,7 @@ footer nav a:hover {
             }
 
             #menu-checkbox:checked + nav {
-                display: flex; /* Display nav when menu is clicked */
+                display: flex; 
             }
 
             nav a {
@@ -149,6 +149,11 @@ footer nav a:hover {
             h2 {
                 font-size: 20px;
             }
+
+            footer-nav{
+                flex-direction:column;
+                text-align:cemnter;
+                }
         }
     </style>
 </head>
@@ -175,6 +180,8 @@ footer nav a:hover {
         <p>When I'm not designing, you can find me exploring the latest design trends, experimenting with new tools, or enjoying a good laugh over some quirky humor. Let's create something amazing together!</p>
     </div>
 
+    <hr style="border: 5px solid black; width: 100%; margin: 20px auto;" />
+
     <footer>
         <p>&copy; 2025 K S Sooraj. All rights reserved.</p>
         <nav>
@@ -183,6 +190,10 @@ footer nav a:hover {
             <a href="https://www.figma.com/design/ytM4WuFLIiODZvHIVlhyw6/premia-luxury?node-id=7-2&p=f&t=hk9H6EDNOGSw2pTy-0" target="_blank" rel="noopener noreferrer">Figma</a>
             <a href="https://www.behance.net/kssooraj1" target="_blank" rel="noopener noreferrer">Behance</a>
             <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" target="_blank" rel="noopener noreferrer">Case Study</a>
+            <a href="list.html">List</a>
+            <a href="table.html">Creating Table</a>
+            <a href="imagegallerylinkcopy.html">image gallery</a>
+            <a href="news.html">Creating Text animation</a>
         </nav>
     </footer>
 </body>
