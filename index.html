@@ -32,26 +32,17 @@
         }
 
         #menu {
-            display: block;
-            font-size: 40px;
-            color: white;
-            background-color: black;
-            padding: 10px;
-            text-align: center;
-            border-radius: 10px;
-            margin: 10px auto;
-            cursor: pointer;
-            max-width: 120px;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            display: none; 
         }
 
         #menu-checkbox {
-            display: none;
+            display: none; 
         }
 
         nav {
-            display: none;
-            flex-direction: column;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
             background-color: black;
             border: 1px solid teal;
             border-radius: 10px;
@@ -59,6 +50,7 @@
             text-align: center;
             box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
             margin: 10px auto;
+            gap: 10px; /* Add spacing between links */
         }
 
         nav a {
@@ -66,7 +58,7 @@
             text-decoration: none;
             color: white;
             padding: 10px;
-            margin: 5px;
+            margin: 0;
             display: inline-block;
             border-radius: 5px;
         }
@@ -75,10 +67,6 @@
             text-decoration: underline;
             background: cyan;
             color: black;
-        }
-
-        #menu-checkbox:checked + nav {
-            display: flex;
         }
 
         #main {
@@ -133,6 +121,26 @@
         }
 
         @media (max-width: 768px) {
+            #menu {
+                display: block; 
+                text-align:center;
+            }
+
+            #menu-checkbox:checked + nav {
+                display: flex; 
+                flex-direction: column; 
+            }
+
+            nav {
+                display: none; 
+                border: none;
+            }
+
+            nav a {
+                text-align: center;
+                margin: 5px 0; 
+            }
+
             .banner {
                 background-image: none;
             }
@@ -144,10 +152,6 @@
 
             h2 {
                 font-size: 20px;
-            }
-
-            nav a {
-                font-size: 14px;
             }
         }
 
@@ -192,11 +196,15 @@
     <footer>
         <p>Site Map</p>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="practice.html">Practice</a>
-            <a href="https://www.figma.com/design/ytM4WuFLIiODZvHIVlhyw6/premia-luxury?node-id=7-2&p=f&t=hk9H6EDNOGSw2pTy-0" target="_blank" rel="noopener noreferrer">Figma</a>
-            <a href="https://www.behance.net/kssooraj1" target="_blank" rel="noopener noreferrer">Behance</a>
-            <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" target="_blank" rel="noopener noreferrer">Case Study</a>
+            <a href="index.html">Home</a> |
+            <a href="practice.html">Practice</a> |
+            <a href="https://www.figma.com/design/ytM4WuFLIiODZvHIVlhyw6/premia-luxury?node-id=7-2&p=f&t=hk9H6EDNOGSw2pTy-0" target="_blank" rel="noopener noreferrer">Figma</a> |
+            <a href="https://www.behance.net/kssooraj1" target="_blank" rel="noopener noreferrer">Behance</a> |
+            <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" target="_blank" rel="noopener noreferrer">Case Study</a> |
+            <a href="list.html">list</a> |
+            <a href="table.html">Creating Table</a> |
+            <a href="news.html">Creating Text Animation</a> |
+            <a href="imagegallerylinkcopy.html">Image gallery</a> |
         </nav>
         <p>&copy; 2025 K S Sooraj. All rights reserved.</p>
     </footer>
