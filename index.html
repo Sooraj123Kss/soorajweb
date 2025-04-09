@@ -28,7 +28,15 @@
             padding: 50px 20px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
             border-radius: 10px;
-            margin-bottom:10px;
+            margin-top:10px;
+        }
+
+        #menu {
+            display: none;
+        }
+
+        #menu-checkbox {
+            display: none; 
         }
 
         nav {
@@ -56,17 +64,18 @@
             color: black;
         }
 
-        
-
         #main {
+            flex: 1;
             margin: auto;
-            margin-top:10px;
             padding: 20px;
             font-size: 18px;
             background-color: white;
             border: 1px solid black;
             border-radius: 10px;
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            margin:auto;
+            margin-top:10px;
+            margin-bottom:10px:
         }
 
         footer {
@@ -75,19 +84,20 @@
             text-align: center;
             padding: 15px;
         }
-
+        
         footer nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    background-color: black; 
-    border: 2px solid teal;
-    border-radius: 10px; 
-    padding: 15px; 
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
-    margin: 10px auto; 
-    max-width: 90%;
+    background-color: black; /* Box background */
+    border: 3px solid teal; /* Box border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Add padding inside the box */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Shadow for the box */
+    margin: 10px auto; /* Center box within the footer */
+    max-width: 90%; /* Ensure the box doesn't stretch too wide */
+}
 
 footer nav a {
     color: teal;
@@ -99,45 +109,53 @@ footer nav a:hover {
     text-decoration: underline;
     color: black;
 }
-       
-
-       
-
+        
         @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                align-items: center;
+            #menu {
+                display: block; /* Show menu button for dropdown */
+                text-align: center;
+                background-color: black;
+                color: white;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 5px;
+                margin: 10px auto;
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
             }
 
-            .banner{
-                display:none;
-             }
+            #menu-checkbox {
+                display: block; /* Enable menu checkbox */
+            }
 
-            #main {
-                font-size: 16px;
+            nav {
+                display: none; /* Hide nav by default for smaller screens */
+                flex-direction: column;
+                background-color: black;
                 padding: 15px;
+                border-radius: 10px;
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            }
+
+            #menu-checkbox:checked + nav {
+                display: flex; /* Display nav when menu is clicked */
+            }
+
+            nav a {
+                text-align: center;
+                margin: 5px 0;
+                padding: 10px;
             }
 
             h2 {
                 font-size: 20px;
             }
         }
-
-        @media (max-width: 480px) {
-            nav a {
-                font-size: 14px;
-                padding: 5px;
-            }
-
-            #main {
-                font-size: 14px;
-                padding: 10px;
-            }
-        }
     </style>
 </head>
 <body>
     <h2>K S Sooraj</h2>
+    <label id="menu" for="menu-checkbox">&#9776; Menu</label>
+    <input type="checkbox" id="menu-checkbox">
 
     <nav>
         <a href="index.html">Home</a>
@@ -165,11 +183,8 @@ footer nav a:hover {
             <a href="https://www.figma.com/design/ytM4WuFLIiODZvHIVlhyw6/premia-luxury?node-id=7-2&p=f&t=hk9H6EDNOGSw2pTy-0" target="_blank" rel="noopener noreferrer">Figma</a>
             <a href="https://www.behance.net/kssooraj1" target="_blank" rel="noopener noreferrer">Behance</a>
             <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" target="_blank" rel="noopener noreferrer">Case Study</a>
-            <a href="list.html">List</a>
-            <a href="table.html">Table</a>
-            <a href="news.html">Text Animation</a>
-            <a href="imagegallerylinkcopy.html">Image Gallery</a>
         </nav>
     </footer>
 </body>
 </html>
+
