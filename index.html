@@ -4,171 +4,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <style>
-        body {
-            background-color: #98d2f7;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+    body {
+        background-color: #f5f5f5; 
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
-        .pic{
-            text-align:center;
-            margin:auto
-        }
+    .pic {
+        text-align: center;
+        margin: auto;
+    }
 
+    h2 {
+        color: #2c3e50; 
+        font-family: Arial Black, sans-serif;
+        text-align: center;
+        text-decoration: underline;
+        font-style: italic;
+        margin: 20px 0;
+    }
 
-        h2 {
-            color: black;
-            font-family: Arial Black, sans-serif;
-            text-align: center;
-            text-decoration: underline;
-            font-style: italic;
-            margin: 20px 0;
-        }
+    .banner {
+        background: url("banner.jpg") center/cover no-repeat;
+        text-align: center;
+        padding: 50px 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        margin-top: 10px;
+    }
 
+    #menu {
+        display: none;
+    }
+
+    #menu-checkbox {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #2c3e50; 
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #ecf0f1; 
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: #e74c3c; 
+        color: white;
+    }
+
+    #main {
+        flex: 1;
+        margin: auto;
+        padding: 20px;
+        font-size: 18px;
+        background-color: white;
+        border: 1px solid #2c3e50;  
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        background-color: #2c3e50; 
+        color: #ecf0f1; 
+        text-align: center;
+        padding: 15px;
+    }
+
+    footer nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        background-color: #34495e;
+        border: 3px solid #3498db; 
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        margin: 10px auto;
+        max-width: 90%;
+    }
+
+    footer nav a {
+        color: #3498db; 
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    footer nav a:hover {
+        text-decoration: underline;
+        color: white;
+    }
+
+    @media (max-width: 768px) {
         .banner {
-            background: url("banner.jpg") center/cover no-repeat;
-            text-align: center;
-            padding: 50px 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-            margin-top:10px;
+            background: none;
+            padding: 10px;
+            display: block;
         }
 
         #menu {
-            display: none;
+            display: block;
+            text-align: center;
+            background-color: #34495e; 
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px auto;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         #menu-checkbox {
-            display: none; 
+            display: block;
         }
 
         nav {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            background-color: black;
+            display: none;
+            flex-direction: column;
+            background-color: #2c3e50; 
             padding: 15px;
             border-radius: 10px;
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-            gap: 10px;
-            margin-bottom:10px;
+        }
+
+        #menu-checkbox:checked + nav {
+            display: flex;
         }
 
         nav a {
-            text-decoration: none;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        nav a:hover {
-            background-color: cyan;
-            color: black;
-        }
-
-        #main {
-            flex: 1;
-            margin: auto;
-            padding: 20px;
-            font-size: 18px;
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 10px;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-            margin:auto;
-            margin-top:10px;
-            margin-bottom:10px:
-        }
-
-        footer {
-            background-color: black;
-            color: white;
             text-align: center;
-            padding: 15px;
+            margin: 5px 0;
+            padding: 10px;
         }
-        
-        footer nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    background-color: purple; 
-    border: 3px solid teal; 
-    border-radius: 10px; 
-    padding: 15px; 
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
-    margin: 10px auto; 
-    max-width: 90%; 
-}
 
-footer nav a {
-    color: teal;
-    text-decoration: none;
-    padding: 5px;
-}
+        h2 {
+            font-size: 20px;
+        }
 
-footer nav a:hover {
-    text-decoration: underline;
-    color: black;
-}
-        
-        @media (max-width: 768px) {
- .banner {
-        background: none;
-        padding: 10px; 
-        display: block;
+        footer-nav {
+            flex-direction: column;
+            text-align: center;
+        }
     }
-}
-            #menu {
-                display: block; 
-                text-align: center;
-                background-color: purple;
-                color: white;
-                padding: 10px;
-                cursor: pointer;
-                border-radius: 5px;
-                margin: 10px auto;
-                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-            }
-  
-
-            #menu-checkbox {
-                display: block; 
-            }
-
-            nav {
-                display: none; 
-                flex-direction: column;
-                background-color: black;
-                padding: 15px;
-                border-radius: 10px;
-                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-            }
-
-            #menu-checkbox:checked + nav {
-                display: flex; 
-            }
-
-            nav a {
-                text-align: center;
-                margin: 5px 0;
-                padding: 10px;
-            }
-
-            h2 {
-                font-size: 20px;
-            }
-
-            footer-nav{
-                flex-direction:column;
-                text-align:cemnter;
-                }
-        }
-    </style>
+</style>
 </head>
 <body>
     <h2>K S Sooraj</h2>
