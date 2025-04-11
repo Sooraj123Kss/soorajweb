@@ -64,15 +64,60 @@
             padding: 15px;
             display: block;
             min-height: 60px;
-            color: white; /* For fallback text */
+            color: white;
             text-align: center;
+            border-radius: 8px;
+            max-width: 90%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         audio {
-            display: block;
-            width: 100%;
-            max-width: 400px;
-            margin: 0 auto;
+            display: none;
+        }
+
+        #play-checkbox {
+            display: none;
+        }
+
+        .play-toggle {
+            font-size: 40px;
+            color: cyan;
+            cursor: pointer;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .play-toggle::before {
+            content: '▶️';
+        }
+
+        #play-checkbox:checked + .play-toggle::before {
+            content: '⏸️'; 
+        }
+
+        #play-checkbox:checked + .play-toggle {
+            animation: rotate 2s linear infinite; 
+        }
+
+       
+        #play-checkbox:checked ~ audio {
+            
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            .audio-player {
+                padding: 10px;
+                margin: 10px auto;
+                min-height: 50px;
+            }
+            .play-toggle {
+                font-size: 30px;
+            }
         }
 
         #menu {
@@ -118,8 +163,7 @@
             border-radius: 10px;
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
             margin-top: 10px;
-            margin-bottom:  CSS Debugging
-10px;
+            margin-bottom: 10px;
         }
 
         footer {
@@ -201,16 +245,6 @@
             .banner img {
                 max-width: 60%;
             }
-
-            .audio-player {
-                padding: 10px;
-                margin: 10px auto;
-                min-height: 50px;
-            }
-
-            audio {
-                max-width: 100%;
-            }
         }
     </style>
 </head>
@@ -232,9 +266,10 @@
     </div>
 
     <div class="audio-player">
-        <audio controls loop preload="metadata">
-            <source src="interstellar-soundtrack.mp3" type="audio/mpeg">
-            <source src="interstellar-soundtrack.ogg" type="audio/ogg">
+        <input type="checkbox" id="play-checkbox">
+        <label class="play-toggle" for="play-checkbox"></label>
+        <audio autoplay loop preload="metadata">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
