@@ -8,7 +8,7 @@
             background-color: #98d2f7;
             margin: 0;
             font-family: Arial, sans-serif;
-            min-height: 100vh; 
+            min-height: 100vh;
         }
 
         h2 {
@@ -71,47 +71,38 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
-        
-        audio {
-            display: none;
-        }
-
-    
         #play-checkbox {
             display: none;
         }
 
-    
         .play-toggle {
             font-size: 40px;
             color: cyan;
             cursor: pointer;
-            display: inline-block;
+            display: block;
+            margin: 0 auto 10px auto;
             transition: transform 0.3s ease;
         }
-
 
         .play-toggle::before {
             content: '▶️';
         }
 
-
         #play-checkbox:checked + .play-toggle::before {
-            content: '⏸️'; 
+            content: '⏸️';
         }
 
         #play-checkbox:checked + .play-toggle {
-            animation: rotate 2s linear infinite; 
+            animation: rotate 2s linear infinite;
         }
 
-        
-        #play-checkbox:checked ~ audio {
-            
-        }
-
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+        audio {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #333;
+            border-radius: 5px;
         }
 
         @media (max-width: 768px) {
@@ -122,6 +113,9 @@
             }
             .play-toggle {
                 font-size: 30px;
+            }
+            audio {
+                max-width: 100%;
             }
         }
 
@@ -251,6 +245,11 @@
                 max-width: 60%;
             }
         }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
@@ -273,7 +272,7 @@
     <div class="audio-player">
         <input type="checkbox" id="play-checkbox">
         <label class="play-toggle" for="play-checkbox"></label>
-        <audio autoplay loop preload="metadata">
+        <audio controls loop preload="metadata">
             <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
             <source src="interstellar-soundtrack.mp3" type="audio/mpeg">
             <source src="interstellar-soundtrack.ogg" type="audio/ogg">
@@ -296,6 +295,10 @@
             <a href="https://www.figma.com/design/ytM4WuFLIiODZvHIVlhyw6/premia-luxury?node-id=7-2&p=f&t=hk9H6EDNOGSw2pTy-0" target="_blank" rel="noopener noreferrer">Figma</a>
             <a href="https://www.behance.net/kssooraj1" target="_blank" rel="noopener noreferrer">Behance</a>
             <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" target="_blank" rel="noopener noreferrer">Case Study</a>
+            <a href="imagegallerylinkcopy.html">image gallery</a>
+            <a href="list.html"> Creating list</a>
+            <a href="table.html">Creating Table</a>
+            <a href="news.html">Creating Text Animation</a>
         </nav>
     </footer>
 </body>
