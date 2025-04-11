@@ -62,29 +62,19 @@
         .audio-player {
             text-align: center;
             margin: 20px auto;
-            padding: 10px;
-            background-color: black;
-            border-radius: 10px;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            background-color: #000;
+            border-radius: 8px;
+            border: 2px solid cyan;
             max-width: 90%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         audio {
             width: 100%;
-            max-width: 500px;
-            outline: none;
-        }
-
-        audio::-webkit-media-controls-panel {
-            background-color: black;
-            color: white;
-            border-radius: 5px;
-        }
-
-        audio::-webkit-media-controls-play-button,
-        audio::-webkit-media-controls-volume-slider,
-        audio::-webkit-media-controls-timeline {
-            filter: hue-rotate(180deg); 
+            max-width: 400px;
+            display: block;
+            margin: 0 auto;
         }
 
         #menu {
@@ -214,8 +204,8 @@
             }
 
             .audio-player {
-                padding: 8px;
-                margin: 15px auto;
+                padding: 10px;
+                margin: 10px auto;
             }
 
             audio {
@@ -242,7 +232,7 @@
     </div>
 
     <div class="audio-player">
-        <audio controls loop>
+        <audio controls loop preload="metadata">
             <source src="interstellar-soundtrack.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
@@ -256,7 +246,7 @@
     <hr style="border: 5px solid black; width: 100%; margin: 20px auto;" />
 
     <footer>
-        <p>© K S Sooraj. All rights reserved.</p>
+        <p>© 2025 K S Sooraj. All rights reserved.</p>
         <nav>
             <a href="index.html">Home</a>
             <a href="practice.html">Practice</a>
