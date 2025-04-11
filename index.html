@@ -8,9 +8,7 @@
             background-color: #98d2f7;
             margin: 0;
             font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            min-height: 100vh; 
         }
 
         h2 {
@@ -60,21 +58,20 @@
         }
 
         .audio-player {
-            text-align: center;
+            background-color: #000;
+            border: 2px solid cyan;
             margin: 20px auto;
             padding: 15px;
-            background-color: #000;
-            border-radius: 8px;
-            border: 2px solid cyan;
-            max-width: 90%;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            z-index: 10;
+            display: block;
+            min-height: 60px;
+            color: white; /* For fallback text */
+            text-align: center;
         }
 
         audio {
+            display: block;
             width: 100%;
             max-width: 400px;
-            display: block;
             margin: 0 auto;
         }
 
@@ -121,7 +118,8 @@
             border-radius: 10px;
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
             margin-top: 10px;
-            margin-bottom: 10px;
+            margin-bottom:  CSS Debugging
+10px;
         }
 
         footer {
@@ -207,6 +205,7 @@
             .audio-player {
                 padding: 10px;
                 margin: 10px auto;
+                min-height: 50px;
             }
 
             audio {
@@ -236,8 +235,6 @@
         <audio controls loop preload="metadata">
             <source src="interstellar-soundtrack.mp3" type="audio/mpeg">
             <source src="interstellar-soundtrack.ogg" type="audio/ogg">
-             Test MP3: Uncomment to test
-            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"> 
             Your browser does not support the audio element.
         </audio>
     </div>
