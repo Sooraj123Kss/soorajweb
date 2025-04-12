@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <style>
         body {
@@ -81,7 +81,7 @@
             cursor: pointer;
             display: block;
             margin: 0 auto 10px auto;
-            transition: transform: 0.3s ease;
+            transition: transform 0.3s ease;
         }
 
         .play-toggle::before {
@@ -124,7 +124,7 @@
         }
 
         #menu-checkbox {
-            display: none;
+            display: none; 
         }
 
         nav {
@@ -171,7 +171,7 @@
             text-align: center;
             padding: 15px;
         }
-
+        
         footer nav {
             display: flex;
             flex-wrap: wrap;
@@ -196,39 +196,7 @@
             text-decoration: underline;
             color: black;
         }
-
-        .sliding-banner {
-            width: 100%;
-            height: auto;
-            position: relative;
-            overflow: hidden;
-            margin: 10px 0;
-        }
-
-        .banner-content {
-            display: flex;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            animation: slide 15s linear infinite;
-            width: max-content;
-            justify-content: center;
-        }
-
-        .banner-content img {
-            width: 150px;
-            height: auto;
-            margin: 0 20px;
-            object-fit: contain;
-            border: 1px solid cyan;
-            border-radius: 5px;
-        }
-
-        @keyframes slide {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-
+        
         @media (max-width: 768px) {
             #menu {
                 display: block;
@@ -276,16 +244,6 @@
             .banner img {
                 max-width: 60%;
             }
-
-            .sliding-banner {
-                height: auto;
-            }
-
-            .banner-content img {
-                width: 100px;
-                height: auto;
-                margin: 0 10px;
-            }
         }
 
         @keyframes rotate {
@@ -298,20 +256,7 @@
     <h2>K S Sooraj</h2>
     <label id="menu" for="menu-checkbox">☰ Menu</label>
     <input type="checkbox" id="menu-checkbox">
-    <div class="sliding-banner">
-        <div class="banner-content">
-            <img src="https://cdn.pixabay.com/photo/2023/09/29/11/19/sunrays-8283601_1280.jpg" alt="Sunrays Through Trees">
-            <img src="https://cdn.pixabay.com/photo/2023/05/22/10/49/houses-8010401_1280.jpg" alt="Houses on Hillside">
-            <img src="https://cdn.pixabay.com/photo/2024/03/05/10/38/boat-8614314_1280.jpg" alt="Boat on Calm Lake">
-            <img src="https://cdn.pixabay.com/photo/2023/06/02/10/06/nature-8035211_1280.jpg" alt="Lush Green Valley">
-            <img src="https://cdn.pixabay.com/photo/2023/08/27/08/54/landscape-8216377_1280.jpg" alt="Mountain Landscape">
-            <img src="https://cdn.pixabay.com/photo/2023/09/29/11/19/sunrays-8283601_1280.jpg" alt="Sunrays Through Trees">
-            <img src="https://cdn.pixabay.com/photo/2023/05/22/10/49/houses-8010401_1280.jpg" alt="Houses on Hillside">
-            <img src="https://cdn.pixabay.com/photo/2024/03/05/10/38/boat-8614314_1280.jpg" alt="Boat on Calm Lake">
-            <img src="https://cdn.pixabay.com/photo/2023/06/02/10/06/nature-8035211_1280.jpg" alt="Lush Green Valley">
-            <img src="https://cdn.pixabay.com/photo/2023/08/27/08/54/landscape-8216377_1280.jpg" alt="Mountain Landscape">
-        </div>
-    </div>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="practice.html">Practice</a>
@@ -319,12 +264,14 @@
         <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" target="_blank" rel="noopener noreferrer">Case Study</a>
         <a href="#">Project</a>
     </nav>
+
     <div class="banner">
         <img src="me.png" alt="Profile Picture">
     </div>
+
     <div class="audio-player">
         <input type="checkbox" id="play-checkbox">
-        <label class="play-toggle" for="menu-checkbox"></label>
+        <label class="play-toggle" for="play-checkbox"></label>
         <audio controls loop preload="metadata">
             <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
             <source src="interstellar-soundtrack.mp3" type="audio/mpeg">
@@ -332,12 +279,14 @@
             Your browser does not support the audio element.
         </audio>
     </div>
+
     <div id="main">
         <p>My name is K S Sooraj, I'm a passionate UI/UX Designer who loves transforming ideas into visually appealing and user-friendly designs.</p>
         <p>My journey in the design world is fueled by curiosity and a constant desire to learn and grow.</p>
         <p>When I'm not designing, you can find me exploring the latest design trends, experimenting with new tools, or enjoying a good laugh over some quirky humor. Let's create something amazing together!</p>
     </div>
-    <hr style="border: 5px solid black; width: 100%; margin: 20px auto;">
+    <hr style="border: 5px solid black; width: 100%; margin: 20px auto;" />
+
     <footer>
         <p>© 2025 K S Sooraj. All rights reserved.</p>
         <nav>
@@ -346,8 +295,8 @@
             <a href="https://www.figma.com/design/ytM4WuFLIiODZvHIVlhyw6/premia-luxury?node-id=7-2&p=f&t=hk9H6EDNOGSw2pTy-0" target="_blank" rel="noopener noreferrer">Figma</a>
             <a href="https://www.behance.net/kssooraj1" target="_blank" rel="noopener noreferrer">Behance</a>
             <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" target="_blank" rel="noopener noreferrer">Case Study</a>
-            <a href="imagegallerylinkcopy.html">Image Gallery</a>
-            <a href="list.html">Creating List</a>
+            <a href="imagegallerylinkcopy.html">image gallery</a>
+            <a href="list.html"> Creating list</a>
             <a href="table.html">Creating Table</a>
             <a href="news.html">Creating Text Animation</a>
         </nav>
