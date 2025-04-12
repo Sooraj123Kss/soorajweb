@@ -81,7 +81,7 @@
             cursor: pointer;
             display: block;
             margin: 0 auto 10px auto;
-            transition: transform 0.3s ease;
+            transition: transform: 0.3s ease;
         }
 
         .play-toggle::before {
@@ -199,25 +199,20 @@
 
         .sliding-banner {
             width: 100%;
-            min-height: 100px;
+            height: auto;
             position: relative;
             overflow: hidden;
             margin: 10px 0;
         }
 
-        .banner-wrapper {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            transform: translateY(-50%);
-        }
-
         .banner-content {
             display: flex;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
             animation: slide 15s linear infinite;
             width: max-content;
             justify-content: center;
-            will-change: transform;
         }
 
         .banner-content img {
@@ -283,7 +278,7 @@
             }
 
             .sliding-banner {
-                min-height: 66px;
+                height: auto;
             }
 
             .banner-content img {
@@ -304,19 +299,17 @@
     <label id="menu" for="menu-checkbox">☰ Menu</label>
     <input type="checkbox" id="menu-checkbox">
     <div class="sliding-banner">
-        <div class="banner-wrapper">
-            <div class="banner-content">
-                <img src="https://cdn.pixabay.com/photo/2023/11/04/15/20/path-8364873_1280.jpg" alt="Forest Path">
-                <img src="https://cdn.pixabay.com/photo/2023/10/29/18/28/waterfall-8350266_1280.jpg" alt="Waterfall">
-                <img src="https://cdn.pixabay.com/photo/2023/07/24/08/13/lake-8146720_1280.jpg" alt="Sunset Lake">
-                <img src="https://cdn.pixabay.com/photo/2023/08/20/22/34/starry-sky-8203269_1280.jpg" alt="Starry Sky">
-                <img src="https://cdn.pixabay.com/photo/2023/08/27/08/54/landscape-8216377_1280.jpg" alt="Mountain Landscape">
-                <img src="https://cdn.pixabay.com/photo/2023/11/04/15/20/path-8364873_1280.jpg" alt="Forest Path">
-                <img src="https://cdn.pixabay.com/photo/2023/10/29/18/28/waterfall-8350266_1280.jpg" alt="Waterfall">
-                <img src="https://cdn.pixabay.com/photo/2023/07/24/08/13/lake-8146720_1280.jpg" alt="Sunset Lake">
-                <img src="https://cdn.pixabay.com/photo/2023/08/20/22/34/starry-sky-8203269_1280.jpg" alt="Starry Sky">
-                <img src="https://cdn.pixabay.com/photo/2023/08/27/08/54/landscape-8216377_1280.jpg" alt="Mountain Landscape">
-            </div>
+        <div class="banner-content">
+            <img src="https://cdn.pixabay.com/photo/2023/09/29/11/19/sunrays-8283601_1280.jpg" alt="Sunrays Through Trees">
+            <img src="https://cdn.pixabay.com/photo/2023/05/22/10/49/houses-8010401_1280.jpg" alt="Houses on Hillside">
+            <img src="https://cdn.pixabay.com/photo/2024/03/05/10/38/boat-8614314_1280.jpg" alt="Boat on Calm Lake">
+            <img src="https://cdn.pixabay.com/photo/2023/06/02/10/06/nature-8035211_1280.jpg" alt="Lush Green Valley">
+            <img src="https://cdn.pixabay.com/photo/2023/08/27/08/54/landscape-8216377_1280.jpg" alt="Mountain Landscape">
+            <img src="https://cdn.pixabay.com/photo/2023/09/29/11/19/sunrays-8283601_1280.jpg" alt="Sunrays Through Trees">
+            <img src="https://cdn.pixabay.com/photo/2023/05/22/10/49/houses-8010401_1280.jpg" alt="Houses on Hillside">
+            <img src="https://cdn.pixabay.com/photo/2024/03/05/10/38/boat-8614314_1280.jpg" alt="Boat on Calm Lake">
+            <img src="https://cdn.pixabay.com/photo/2023/06/02/10/06/nature-8035211_1280.jpg" alt="Lush Green Valley">
+            <img src="https://cdn.pixabay.com/photo/2023/08/27/08/54/landscape-8216377_1280.jpg" alt="Mountain Landscape">
         </div>
     </div>
     <nav>
@@ -331,7 +324,7 @@
     </div>
     <div class="audio-player">
         <input type="checkbox" id="play-checkbox">
-        <label class="play-toggle" for="play-checkbox"></label>
+        <label class="play-toggle" for="menu-checkbox"></label>
         <audio controls loop preload="metadata">
             <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
             <source src="interstellar-soundtrack.mp3" type="audio/mpeg">
