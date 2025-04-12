@@ -197,28 +197,30 @@
             color: black;
         }
 
+        /* Sliding Banner */
         .sliding-banner {
             width: 100%;
-            height: 60px;
+            height: auto; /* Adapt to image heights */
             position: relative;
             overflow: hidden;
-            margin: 10px auto;
+            margin: 10px 0;
         }
 
-       .banner-content {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); 
-    animation: slide 20s linear infinite; 
-    width: max-content;
-}
+        .banner-content {
+            display: flex;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: slide 15s linear infinite;
+            width: max-content;
+            justify-content: center;
+        }
 
         .banner-content img {
-            height: 50px;
-            width: auto;
-            margin: 0 10px;
-            object-fit: contain;
+            width: 150px; 
+            height: auto; 
+            margin: 0 20px;
+            object-fit: contain; 
             border: 1px solid cyan;
             border-radius: 5px;
         }
@@ -277,12 +279,13 @@
             }
 
             .sliding-banner {
-                height: 40px;
+                height: auto;
             }
 
             .banner-content img {
-                height: 30px;
-                margin: 0 5px;
+                width: 100px;
+                height: auto;
+                margin: 0 10px;
             }
         }
 
@@ -296,7 +299,17 @@
     <h2>K S Sooraj</h2>
     <label id="menu" for="menu-checkbox">☰ Menu</label>
     <input type="checkbox" id="menu-checkbox">
-
+    <div class="sliding-banner">
+        <div class="banner-content">
+           <img src="https://cdn.pixabay.com/photo/2023/09/29/11/19/sunrays-8283601_1280.jpg" >
+                <img src="https://cdn.pixabay.com/photo/2023/05/22/10/49/houses-8010401_1280.jpg" >
+                <img src="https://cdn.pixabay.com/photo/2024/03/05/10/38/boat-8614314_1280.jpg" >
+                <img src="https://cdn.pixabay.com/photo/2024/03/05/10/38/boat-8614314_1280.jpg" >
+                <img src="https://cdn.pixabay.com/photo/2023/05/22/10/49/houses-8010401_1280.jpg" >
+                <img src="https://cdn.pixabay.com/photo/2023/09/29/11/19/sunrays-8283601_1280.jpg" >
+                <img src="https://cdn.pixabay.com/photo/2023/06/02/10/06/nature-8035211_1280.jpg" >
+        </div>
+    </div>
     <nav>
         <a href="index.html">Home</a>
         <a href="practice.html">Practice</a>
@@ -335,19 +348,12 @@
             <a href="https://www.figma.com/design/ytM4WuFLIiODZvHIVlhyw6/premia-luxury?node-id=7-2&p=f&t=hk9H6EDNOGSw2pTy-0" target="_blank" rel="noopener noreferrer">Figma</a>
             <a href="https://www.behance.net/kssooraj1" target="_blank" rel="noopener noreferrer">Behance</a>
             <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" target="_blank" rel="noopener noreferrer">Case Study</a>
+            <a href="imagegallerylinkcopy.html">image gallery</a>
+            <a href="list.html"> Creating list</a>
+            <a href="table.html">Creating Table</a>
+            <a href="news.html">Creating Text Animation</a>
+
         </nav>
-        <div class="sliding-banner">
-            <div class="banner-content">
-                <img src="https://cdn.pixabay.com/photo/2023/06/02/10/06/nature-8035211_1280.jpg" >
-                <img src="https://cdn.pixabay.com/photo/2023/09/29/11/19/sunrays-8283601_1280.jpg" >
-                <img src="https://cdn.pixabay.com/photo/2023/05/22/10/49/houses-8010401_1280.jpg" >
-                <img src="https://cdn.pixabay.com/photo/2024/03/05/10/38/boat-8614314_1280.jpg" >
-                <img src="https://cdn.pixabay.com/photo/2024/03/05/10/38/boat-8614314_1280.jpg" >
-                <img src="https://cdn.pixabay.com/photo/2023/05/22/10/49/houses-8010401_1280.jpg" >
-                <img src="https://cdn.pixabay.com/photo/2023/09/29/11/19/sunrays-8283601_1280.jpg" >
-                <img src="https://cdn.pixabay.com/photo/2023/06/02/10/06/nature-8035211_1280.jpg" >
-            </div>
-        </div>
     </footer>
 </body>
 </html>
