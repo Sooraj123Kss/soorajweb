@@ -196,7 +196,37 @@
             text-decoration: underline;
             color: black;
         }
-        
+        .sliding-banner {
+            width: 100%;
+            height: 60px;
+            position: relative;
+            overflow: hidden;
+            margin: 10px auto;
+        }
+
+        .banner-content {
+            display: flex;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: slide 15s linear infinite;
+            width: max-content;
+        }
+
+        .banner-content img {
+            height: 50px;
+            width: auto;
+            margin: 0 10px;
+            object-fit: contain;
+            border: 1px solid cyan;
+            border-radius: 5px;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
         @media (max-width: 768px) {
             #menu {
                 display: block;
@@ -244,6 +274,15 @@
             .banner img {
                 max-width: 60%;
             }
+
+            .sliding-banner {
+                height: 40px;
+            }
+
+            .banner-content img {
+                height: 30px;
+                margin: 0 5px;
+            }
         }
 
         @keyframes rotate {
@@ -256,7 +295,20 @@
     <h2>K S Sooraj</h2>
     <label id="menu" for="menu-checkbox">☰ Menu</label>
     <input type="checkbox" id="menu-checkbox">
-
+    <div class="sliding-banner">
+        <div class="banner-content">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1f3e7b129345697.615e7f6d9e9b8.jpg" alt="Mobile App UI">
+            <img src="https://cdn.dribbble.com/users/1749957/screenshots/15505762/media/6c6b6f6f6f6f6f6f6f6f6f6f6f6f6f6f.jpg" alt="Dashboard Design">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/7a3b23129345697.615e7f6d9e9b8.jpg" alt="Website Mockup">
+            <img src="https://cdn.dribbble.com/users/1234567/screenshots/16678901/media/8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d.jpg" alt="E-commerce UI">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9c3e7b129345697.615e7f6d9e9b8.jpg" alt="Portfolio Card">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1f3e7b129345697.615e7f6d9e9b8.jpg" alt="Mobile App UI">
+            <img src="https://cdn.dribbble.com/users/1749957/screenshots/15505762/media/6c6b6f6f6f6f6f6f6f6f6f6f6f6f6f6f.jpg" alt="Dashboard Design">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/7a3b23129345697.615e7f6d9e9b8.jpg" alt="Website Mockup">
+            <img src="https://cdn.dribbble.com/users/1234567/screenshots/16678901/media/8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d.jpg" alt="E-commerce UI">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9c3e7b129345697.615e7f6d9e9b8.jpg" alt="Portfolio Card">
+        </div>
+    </div>
     <nav>
         <a href="index.html">Home</a>
         <a href="practice.html">Practice</a>
