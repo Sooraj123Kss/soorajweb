@@ -14,6 +14,7 @@
         }
 
         .pic {
+            width: 23.5%; 
             flex: 0 0 23.5%; 
             height: 100%;
             box-shadow: 10px 10px 10px cyan;
@@ -23,9 +24,9 @@
 
         @keyframes slidebanner {
             0%, 20% { transform: translateX(0); }
-            25%, 45% { transform: translateX(-25.5%); }
-            50%, 70% { transform: translateX(-51%); }
-            75%, 95% { transform: translateX(-76.5%); }
+            25%, 45% { transform: translateX(-25.5%); } 
+            50%, 70% { transform: translateX(-51%); }   
+            75%, 95% { transform: translateX(-76.5%); } 
             100% { transform: translateX(0); }
         }
 
@@ -130,66 +131,6 @@
             border-radius: 5px;
         }
 
-        @media (max-width: 768px) {
-            #slide {
-                height: 250px;
-                gap: 2%; 
-            }
-            .pic {
-                flex: 0 0 23.5%; 
-            }
-            .audio-player {
-                padding: 10px;
-                margin: 10px auto;
-                min-height: 50px;
-            }
-            .play-toggle {
-                font-size: 30px;
-            }
-            audio {
-                max-width: 100%;
-            }
-            #menu {
-                display: block;
-                text-align: center;
-                background-color: black;
-                color: white;
-                padding: 10px;
-                cursor: pointer;
-                border-radius: 5px;
-                margin: 10px auto;
-                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-            }
-            #menu-checkbox {
-                display: block;
-            }
-            nav {
-                display: none;
-                flex-direction: column;
-                background-color: black;
-                padding: 15px;
-                border-radius: 10px;
-                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-            }
-            #menu-checkbox:checked + nav {
-                display: flex;
-            }
-            nav a {
-                text-align: center;
-                margin: 5px 0;
-                padding: 10px;
-            }
-            h2 {
-                font-size: 20px;
-            }
-            .banner {
-                padding: 30px 10px;
-            }
-            .banner img {
-                max-width: 60%;
-            }
-        }
-
         #menu {
             display: none;
         }
@@ -271,6 +212,67 @@
         @keyframes rotate {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            #slide {
+                height: 250px;
+                gap: 2%; 
+            }
+            .pic {
+                width: 23.5%; 
+                flex: 0 0 23.5%; 
+            }
+            .audio-player {
+                padding: 10px;
+                margin: 10px auto;
+                min-height: 50px;
+            }
+            .play-toggle {
+                font-size: 30px;
+            }
+            audio {
+                max-width: 100%;
+            }
+            #menu {
+                display: block;
+                text-align: center;
+                background-color: black;
+                color: white;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 5px;
+                margin: 10px auto;
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            }
+            #menu-checkbox {
+                display: block;
+            }
+            nav {
+                display: none;
+                flex-direction: column;
+                background-color: black;
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            }
+            #menu-checkbox:checked + nav {
+                display: flex;
+            }
+            nav a {
+                text-align: center;
+                margin: 5px 0;
+                padding: 10px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            .banner {
+                padding: 30px 10px;
+            }
+            .banner img {
+                max-width: 60%;
+            }
         }
     </style>
 </head>
