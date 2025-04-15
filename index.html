@@ -4,31 +4,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <style>
-       #slide {
+ #slide {
     display: flex;
     width: 70%;
     margin: auto;
     height: 400px;
     overflow: hidden;
     margin-top: -5px;
-    justify-content: center;
+    justify-content: flex-start; 
 }
 
 .pic {
-    flex: 0 0 100%;
+    flex: 0 0 100%; 
     height: 100%;
-    text-align:center;
-    margin:auto;
     box-shadow: 10px 10px 10px cyan;
-    object-fit: cover;
-    animation: slidebanner 20s infinite linear; 
+    object-fit: cover; 
+    animation: slidebanner 20s infinite linear;
+    display: block; 
 }
 
 @keyframes slidebanner {
-    0%, 20% { transform: translateX(0); }      
+    0%, 20% { transform: translateX(0); }       
     25%, 45% { transform: translateX(-100%); }  
-    50%, 70% { transform: translateX(-200%); }  
-    75%, 95% { transform: translateX(-300%); }
+    50%, 70% { transform: translateX(-200%); } 
+    75%, 95% { transform: translateX(-300%); }  
     100% { transform: translateX(0); }          
 }
        
@@ -218,18 +217,20 @@
 
         @media (max-width: 768px) {
             #slide {
-                height: 150px;
-                width: 100%;
-            }
-            .pic {
-                flex: 0 0 100%; 
-            }
-            @keyframes slidebanner {
-                0%, 33% { transform: translateX(0); }
-                34%, 66% { transform: translateX(-100%); }
-                67%, 99% { transform: translateX(-200%); }
-                100% { transform: translateX(0); }
-            }
+        height: 150px;
+        width: 100%;
+    }
+    .pic {
+        flex: 0 0 100%;
+    }
+    @keyframes slidebanner {
+        0%, 20% { transform: translateX(0); }
+        25%, 45% { transform: translateX(-100%); }
+        50%, 70% { transform: translateX(-200%); }
+        75%, 95% { transform: translateX(-300%); }
+        100% { transform: translateX(0); }
+    }
+   
             .audio-player {
                 padding: 10px;
                 margin: 10px auto;
