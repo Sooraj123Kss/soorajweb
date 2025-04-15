@@ -6,27 +6,26 @@
     <style>
         #slide {
             display: flex;
+            width: 100%; 
             height: 400px;
             overflow: hidden;
             margin-top: -5px;
-            gap: 2%; 
+            justify-content: center;
         }
 
         .pic {
-            width: 100%; 
-            flex: 0 0 23.5%; 
+            flex: 0 0 100%; 
             height: 100%;
             box-shadow: 10px 10px 10px cyan;
             object-fit: cover;
-            animation: slidebanner 19s infinite;
+            animation: slidebanner 19s infinite linear;
         }
 
         @keyframes slidebanner {
-            0%, 20% { transform: translateX(0); }
-            25%, 45% { transform: translateX(-25.5%); } 
-            50%, 70% { transform: translateX(-51%); }   
-            75%, 95% { transform: translateX(-76.5%); } 
-            100% { transform: translateX(0); }
+            0%, 33% { transform: translateX(0); }
+            34%, 66% { transform: translateX(-100%); } 
+            67%, 99% { transform: translateX(-200%); } 
+            100% { transform: translateX(0); } 
         }
 
         body {
@@ -216,11 +215,16 @@
         @media (max-width: 768px) {
             #slide {
                 height: 150px;
-                gap: 2%; 
+                width: 100%;
             }
             .pic {
-                width: 50%; 
-                flex: 0 0 50%; 
+                flex: 0 0 100%; 
+            }
+            @keyframes slidebanner {
+                0%, 33% { transform: translateX(0); }
+                34%, 66% { transform: translateX(-100%); }
+                67%, 99% { transform: translateX(-200%); }
+                100% { transform: translateX(0); }
             }
             .audio-player {
                 padding: 10px;
@@ -280,7 +284,7 @@
     <div id="slide">
         <img src="p3.jpg" class="pic" alt="Slide 1">
         <img src="p2.jpg" class="pic" alt="Slide 2">
-        <img src="p4.jpg" class="pic" alt="Slide 4">
+        <img src="p4.jpg" class="pic" alt="Slide 3">
     </div>
 
     <label id="menu" for="menu-checkbox">☰ Menu</label>
