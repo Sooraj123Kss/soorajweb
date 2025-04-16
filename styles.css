@@ -184,7 +184,7 @@ main {
 
         footer nav a:hover {
             text-decoration: underline;
-            color: black;
+            color: blue;
         }
 
 @media (max-width: 768px) {
