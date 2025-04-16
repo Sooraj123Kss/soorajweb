@@ -192,6 +192,7 @@ main {
         font-size: 1.5rem;
     }
 
+
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -212,4 +213,9 @@ main {
     .news-item h3 {
         font-size: 1rem;
     }
+    nav a {
+                text-align: center;
+                margin: 5px 0;
+                padding: 10px;
+            }
 }
