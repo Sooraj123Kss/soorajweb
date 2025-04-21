@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Bookmarking</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +43,8 @@ header #logo {
 }
 
 header #banner {
-    width: 70%;
+    display:flex;
+    width: 40%;
     height: 100%;
     overflow: hidden;
     position: relative;
@@ -67,7 +67,8 @@ header #banner img {
 }
 
 nav {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
     margin: 20px 0;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -78,11 +79,14 @@ nav {
 nav ol {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
 nav ol li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0 10px; 
+    padding: 5px 0; 
 }
 
 nav ol li a {
@@ -156,7 +160,6 @@ hr {
 
  footer nav {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             gap: 15px;
             background-color: black;
@@ -183,8 +186,33 @@ hr {
        header #logo {
        display:none;
         }
-
+       
+ header #banner{
+ height:150px;
+ width:60%;
 }
+       
+       nav {
+    display:flex;
+    flex-direction:column;
+    }
+   
+
+      
+       nav ol {
+        align-items: center;
+        padding:5px
+    }
+
+    nav ol li {
+        margin: 10px 0;
+    }
+}   
+    footer{
+      display:flex;
+      flex-direction:column;
+      text-align:center:
+       }
 
 </style>
 </head>
@@ -279,6 +307,9 @@ hr {
     <a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
     <a href="#" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
 </div>
+
+<hr style="border: 5px solid black; width: 100%; margin: 20px auto;" />
+
 
 <footer>
         <p>© 2025 K S Sooraj. All rights reserved.</p>
