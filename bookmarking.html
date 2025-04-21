@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+<title>Bookmarking</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Great+Vibes&family=Raleway:ital,wght@0,100..900;1,100..900&family=Vibes&display=swap" rel="stylesheet">
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header #logo {
+    width: 10%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header #banner {
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+header #banner img {
+    width: 100%;
+    animation: moveBanner 10s linear infinite;
+}
+
+@keyframes moveBanner {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+nav ol {
+    list-style: none;
+    padding: 0;
+}
+
+nav ol li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ol li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ol li a:hover {
+    color: #ff7e5f;
+}
+
+.box {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0.5px orange
+}
+
+#bar {
+    cursor: pointer;
+    position: fixed;
+    top: 70%;
+    left: -150px;
+    transition: 0.5s;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    box-shadow:10px 10px 10px cyan;
+    text-align: center;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+#bar:hover {
+    left: 20px;
+    opacity: 1;
+}
+
+#bar img {
+    width: auto;
+    height: 100%;
+}
+
+#sidebar {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+h2 {
+    text-align: center;
+    margin: 40px 0;
+    color: #ff7e5f;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #ff7e5f, rgba(0, 0, 0, 0));
+    margin: 60px 0;
+}
+
+ footer nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            background-color: black;
+            border: 3px solid teal;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            margin: 10px auto;
+            max-width: 90%;
+        }
+
+        footer nav a {
+            color: #d35400;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        footer nav a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+@media (max-width: 768px) {
+       header #logo {
+       display:none;
+        }
+
+}
+
+</style>
+</head>
+<body>
+
+<a name="top"></a>
+<header>
+    <div id="logo"><img src="images/logo.png"></div>
+    <div id="banner">
+        <img src="images/f1.jpg" alt="Banner Image 1">
+        <img src="images/f2.jpg" alt="Banner Image 2">
+        <img src="images/f3.jpg" alt="Banner Image 2">
+        <img src="images/f4.jpg" alt="Banner Image 2">
+    </div>
+    <div id="find">Find</div>
+</header>
+
+<nav>
+    <ol>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#vision">Our Vision</a></li>
+        <li><a href="#end">Go to End</a></li>
+    </ol>
+</nav>
+
+<a name="about"></a>
+<h2>About Us</h2>
+
+<div class="box">
+    <p>
+        Hello! I'm K S Sooraj, and I call the vibrant neighborhood of Dilshad Garden in Delhi, India, my home. I enjoy starting my mornings with fresh ideas and boundless curiosity. My conversations are often lively and engaging, reflecting my love for witty humor and creativity.
+    </p>
+    <p>
+        I thrive on discovering and exploring fascinating topics, often uncovering unique perspectives that add depth to my understanding of the world. Whether it’s diving into creative projects, brainstorming innovative ideas, or engaging in light-hearted and humorous exchanges, I truly value meaningful connections that spark inspiration.
+    </p>
+    <p>
+        I see myself as someone who embraces the richness of life with an open mind and a playful spirit. From soaking in new knowledge to sharing a good laugh, I'm always eager to experience the beauty of creativity and connection.
+    </p>
+    <p>
+        As a passionate and skilled UI/UX professional, I specialize in designing intuitive and user-friendly interfaces that create meaningful digital experiences. From crafting wireframes and prototypes to conducting user research and improving usability, I take pride in delivering high-quality design solutions tailored to meet the unique needs of each project. My services include:
+    </p>
+    <ul type="circle">
+        <li>User Interface (UI) Design</li>
+        <li>User Experience (UX) Strategy & Research</li>
+        <li>Prototyping & Wireframing</li>
+        <li>Usability Testing & Optimization</li>
+        <li>Mobile and Web Application Design</li>
+    </ul>
+</div>
+
+<a name="services"></a>
+<h2>Our Services</h2>
+<div class="box">
+    <p>
+        At our company, we offer a wide range of services designed to meet your needs. Our team of experts is dedicated to providing top-notch solutions that help you achieve your goals. Here are some of the services we offer:
+    </p>
+    <ul type="circle">
+        <li>Web Development</li>
+        <li>Graphic Design</li>
+        <li>Digital Marketing</li>
+        <li>SEO Optimization</li>
+        <li>Content Creation</li>
+    </ul>
+    <p>
+        Whether you need a new website, a stunning logo, or a comprehensive marketing strategy, we've got you covered. Our approach is tailored to each client, ensuring that you get the best results possible.
+    </p>
+</div>
+
+<a name="vision"></a>
+<h2>Our Vision</h2>
+<div class="box">
+    <p>
+        Our vision is to be the leading provider of innovative solutions that empower our clients to succeed in the digital age. We strive to create meaningful experiences that inspire and connect people around the world.
+    </p>
+    <p>
+        We believe in the power of creativity, collaboration, and continuous learning. Our team is committed to pushing the boundaries of what's possible and delivering exceptional value to our clients.
+    </p>
+    <p>
+        Join us on this journey as we work together to shape the future of digital experiences.
+    </p>
+</div>
+
+
+<div id="bar">
+    <a href="#top"><img src="images/up.png" alt="Back to Top"></a>
+</div>
+
+<div id="sidebar">
+    <a href="#top"><img src="images/up.png" alt="Back to Top"></a>
+     <a href="#" target="_blank"><img src="images/insta.png" alt="Facebook"></a>
+    <a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+    <a href="#" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+</div>
+
+<footer>
+        <p>© 2025 K S Sooraj. All rights reserved.</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="practice.html">Practice</a>
+            <a href="https://www.figma.com/design/ytM4WuFLIiODZvHIVlhyw6/premia-luxury?node-id=7-2&p=f&t=hk9H6EDNOGSw2pTy-0" target="_blank" rel="noopener noreferrer">Figma</a>
+            <a href="https://www.behance.net/kssooraj1" target="_blank" rel="noopener noreferrer">Behance</a>
+            <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" target="_blank" rel="noopener noreferrer">Case Study</a>
+            <a href="imagegallerylinkcopy.html">image gallery</a>
+            <a href="list.html">Creating list</a>
+            <a href="table.html">Creating Table</a>
+            <a href="news.html">Creating Text Animation</a>
+             <a href="bookmarking.html">bookmark</a>
+
+        </nav>
+    </footer>
+
+
+
+<hr>
+
+<a name="end"></a>
+
+</body>
+</html>
