@@ -158,61 +158,79 @@ hr {
     margin: 60px 0;
 }
 
- footer nav {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            background-color: black;
-            border: 3px solid teal;
-            border-radius: 10px;
-            padding: 15px;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-            margin: 10px auto;
-            max-width: 90%;
-        }
+footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    background-color: black;
+    border: 3px solid teal;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 10px auto;
+    max-width: 90%;
+}
 
-        footer nav a {
-            color: #d35400;
-            text-decoration: none;
-            padding: 5px;
-        }
+footer nav a {
+    color: #d35400;
+    text-decoration: none;
+    padding: 5px;
+}
 
-        footer nav a:hover {
-            text-decoration: underline;
-            color: black;
-        }
+footer nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
 
 @media (max-width: 768px) {
-       header #logo {
-       display:none;
-        }
-       
- header #banner{
- height:150px;
- width:60%;
-}
-       
-       nav {
-    display:flex;
-    flex-direction:column;
-    }
-   
+    
 
-      
-       nav ol {
+@media (max-width: 768px) {
+ footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    background-color: black;
+    border: 3px solid teal;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 10px auto;
+    max-width: 90%;
+}
+
+footer nav a {
+    color: #d35400;
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    header #logo {
+        display: none;
+    }
+
+    nav ol {
+        flex-direction: column;
         align-items: center;
-        padding:5px
     }
 
     nav ol li {
         margin: 10px 0;
     }
-}   
-    footer{
-      display:flex;
-      flex-direction:column;
-      text-align:center:
-       }
+
+    footer nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 </style>
 </head>
