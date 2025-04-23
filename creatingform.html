@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
     header {
         width: 100%;
@@ -16,7 +17,7 @@
 
     header #banner {
         display: flex;
-        width: 70%;
+        width: 40%;
         height: 100%;
         overflow: hidden;
         position: relative;
@@ -59,7 +60,7 @@
 
     footer nav a:hover {
         text-decoration: underline;
-        color: blue;
+        color: black;
     }
 
     #main {
@@ -69,7 +70,7 @@
         margin-top: 20px;
         border: 1px solid black;
         border-radius: 20px;
-        box-shadow: 10px 10px 10px orange;
+        box-shadow: 5px 5px 5px orange;
         padding: 20px;
     }
 
@@ -95,7 +96,7 @@
     }
 
     label {
-        font-size: 20px; /* Increased font size for labels */
+        font-size: 20px; 
         display: block;
         margin-top: 10px;
     }
@@ -121,6 +122,45 @@
 
         footer nav a {
             margin: 5px 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        header #banner {
+            height: 150px;
+            width: 80%;
+        }
+
+        #main {
+            width: 90%;
+        }
+
+        label {
+            font-size: 18px; 
+        }
+
+        input[type="text"], input[type="password"] {
+            font-size: 20px; 
+        }
+
+        input[type="submit"], input[type="reset"] {
+            width: 80px;
+            height: 35px;
+            font-size: 16px; 
+        }
+
+        footer nav a {
+            font-size: 16px; 
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer p {
+            margin-top: 10px;
         }
     }
 </style>
