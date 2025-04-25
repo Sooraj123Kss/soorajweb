@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+<head>
+    <title>Bootcamp Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            overflow:auto;
+        }
+
+        header {
+            width:100%;
+            height: 300px;
+            background: linear-gradient(to right, #0047ab, #00aaff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header #banner {
+            display: flex;
+            width: 200px;
+            height: auto;
+            overflow: hidden;
+            position: relative;
+            border: 2px solid #fff;
+            border-radius: 10px;
+        }
+
+        header #banner img {
+            width: auto;
+            height: 200px;
+            text-align: center;
+        }
+
+        #main {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px blue;
+            padding: 20px;
+        }
+
+        table {
+            margin: auto;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: auto;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+
+        footer nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background-color: blue;
+            border: 3px solid teal;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            margin: 10px auto;
+            max-width: 90%;
+        }
+
+        footer nav a {
+            color: green;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        footer nav a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+       
+        footer p {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                width:auto;
+            }
+
+            header #banner {
+                width: 60%;
+            }
+
+            header #banner img {
+                width:100%;
+            }
+
+            #main {
+                width: 90%;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            footer nav a {
+                font-size: 16px;
+            }
+
+            footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            footer p {
+                margin-top: 10px;
+            }
+
+            footer nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="banner">
+            <img src="images/logo.png" alt="Banner Image 1">
+        </div>
+    </header>
+
+    <main id="main">
+        <table border="0" cellpadding="5">
+            <caption style="font-size:30px;font-weight:bold;">Bootcamp Registration Form</caption>
+            <form action="https://example.com/dummy-submit" method="post">
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number</label></td>
+                    <td><input type="tel" id="phone" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other" required>
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="course">Select Course</label></td>
+                    <td>
+                        <select id="course" name="course" required>
+                            <option value="web-development">Web Development</option>
+                            <option value="data-science">Data Science</option>
+                            <option value="mobile-app-development">Mobile App Development</option>
+                            <option value="cyber-security">Cyber Security</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="skills">Skills</label></td>
+                    <td>
+                        <input list="skill-list" id="skills" name="skills" required>
+                        <datalist id="skill-list">
+                            <option value="HTML">
+                            <option value="CSS">
+                            <option value="JavaScript">
+                            <option value="Python">
+                            <option value="Java">
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="terms">Accept Terms and Conditions</label></td>
+                    <td><input type="checkbox" id="terms" name="terms" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset"></td>
+                </tr>
+            </form>
+        </table>
+    </main>
+    <footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="practice.html">Practice</a>
+            <a href="https://www.figma.com/design/ytM4WuFLIiODZvHIVlhyw6/premia-luxury?node-id=7-2&p=f&t=hk9H6EDNOGSw2pTy-0" target="_blank" rel="noopener noreferrer">Figma</a>
+            <a href="https://www.behance.net/kssooraj1" target="_blank" rel="noopener noreferrer">Behance</a>
+            <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" target="_blank" rel="noopener noreferrer">Case Study</a>
+            <a href="imagegallerylinkcopy.html">Image Gallery</a>
+            <a href="list.html">Creating List</a>
+            <a href="table.html">Creating Table</a>
+            <a href="news.html">Creating Text Animation</a>
+            <a href="bookmarking.html">Bookmark</a>
+        </nav>
+           <p>© 2025 K S Sooraj. All rights reserved.</p>
+    </footer>
+</body>
+</html>
