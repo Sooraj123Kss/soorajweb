@@ -89,55 +89,6 @@ h2 {
     100% { opacity: 1; transform: scale(1); }
 }
 
-.audio-player {
-    background: #f0f4f8;
-    border: 2px solid #00bcd4;
-    margin: 30px auto 0 auto;
-    padding: 18px;
-    display: block;
-    min-height: 60px;
-    color: #1a3a4a;
-    text-align: center;
-    border-radius: 10px;
-    max-width: 70%;
-    box-shadow: 0 4px 20px rgba(0, 188, 212, 0.07);
-}
-
-#play-checkbox {
-    display: none;
-}
-
-.play-toggle {
-    font-size: 40px;
-    color: #00bcd4;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto 10px auto;
-    transition: transform 0.3s ease;
-    filter: drop-shadow(0 0 8px #b2ebf2);
-}
-
-.play-toggle::before {
-    content: '▶️';
-}
-
-#play-checkbox:checked + .play-toggle::before {
-    content: '⏸️';
-}
-
-#play-checkbox:checked + .play-toggle {
-    animation: rotate 2s linear infinite;
-}
-
-audio {
-    display: block;
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto;
-    background-color: #e0f7fa;
-    border-radius: 5px;
-}
-
 #menu {
     display: none;
 }
@@ -270,50 +221,7 @@ hr {
     .pic {
         flex: 0 0 100%;
     }
-    .audio-player {
-        padding: 10px;
-        margin: 10px auto;
-        min-height: 50px;
-    }
-    .play-toggle {
-        font-size: 30px;
-    }
-    audio {
-        max-width: 100%;
-    }
-    #menu {
-        display: block;
-        text-align: center;
-        background: #00bcd4;
-        color: white;
-        padding: 10px;
-        cursor: pointer;
-        border-radius: 5px;
-        margin: 10px auto;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    }
-    #menu-checkbox {
-        display: block;
-    }
-    nav {
-        display: none;
-        flex-direction: column;
-        background: #fff;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    }
-    #menu-checkbox:checked + nav {
-        display: flex;
-    }
-    nav a {
-        text-align: center;
-        margin: 5px 0;
-        padding: 10px;
-    }
-    h2 {
-        font-size: 20px;
-    }
+    
     .banner {
         padding: 30px 10px;
     }
@@ -352,21 +260,10 @@ hr {
         <img src="images/me.jpg" alt="Profile Picture">
     </div>
 
-    <div class="audio-player">
-        <input type="checkbox" id="play-checkbox">
-        <label class="play-toggle" for="play-checkbox"></label>
-        <audio controls loop preload="metadata">
-            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-            <source src="interstellar-soundtrack.mp3" type="audio/mpeg">
-            <source src="interstellar-soundtrack.ogg" type="audio/ogg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
     <div id="main">
         <p>My name is K S Sooraj, I'm a passionate UI/UX Designer who loves transforming ideas into visually appealing and user-friendly designs.</p>
         <p>My journey in the design world is fueled by curiosity and a constant desire to learn and grow.</p>
-        <p>When I'm not designing, you can find me exploring the latest design trends, experimenting with new tools, or enjoying a good laugh over some quirky humor. Let's create something amazing together!</p>
+        <p>When I'm not designing, you can find me exploring the latest design trends, experimenting with new tools, or enjoying a good laugh over some quirky humor. Let's create something amazing tog[...]
     </div>
     <hr style="border: 5px solid black; width: 100%; margin: 20px auto;" />
    <div id= "space">
@@ -391,6 +288,8 @@ hr {
     </footer>
 </body>
 </html>
+
+
 
 
 
