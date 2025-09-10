@@ -53,18 +53,18 @@ h2 {
 }
 
 .banner {
-            background: url("images/ba1.jpg") center/cover no-repeat;
-            text-align: center;
-            width: 80%;
-            margin:auto;
-            padding: 50px 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-            margin-top: 10px;
-            position: relative;
-            overflow: hidden;
-            animation: fadeIn 1.5s ease-in-out;
-        }
+    background: url("images/ba1.jpg") center/cover no-repeat;
+    text-align: center;
+    width: 80%;
+    margin:auto;
+    padding: 50px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+}
 .banner::before {
     content: '';
     position: absolute;
@@ -154,6 +154,64 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
+
+.contact-section {
+    background: linear-gradient(90deg, #00bcd4 0%, #52c6d6 100%);
+    margin: 38px auto 10px auto;
+    padding: 24px 24px 18px 24px;
+    border-radius: 14px;
+    box-shadow: 0 6px 32px rgba(0,188,212,0.09);
+    max-width: 500px;
+    color: #fff;
+    position: relative;
+    transition: box-shadow 0.3s;
+    border: 2px solid #00bcd4;
+    font-size: 18px;
+}
+
+.contact-section:focus, .contact-section:hover {
+    box-shadow: 0 12px 40px rgba(0,188,212,0.17);
+}
+
+.contact-section h3 {
+    margin-top: 0;
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: #fff;
+    text-shadow: 0 2px 6px #1a3a4a33;
+    letter-spacing: 1px;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.contact-details-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-details-list li {
+    margin-bottom: 9px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-details-list li i {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.contact-details-list a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.contact-details-list a:hover {
+    color: #1a3a4a;
+}
+
 #space{
     height: 10px;
     margin:auto;
@@ -232,6 +290,14 @@ hr {
         height: 1px;
         margin:auto;
     }
+    .contact-section {
+        max-width: 96%;
+        font-size: 16px;
+        padding: 16px 10px 12px 10px;
+    }
+    .contact-section h3 {
+        font-size: 20px;
+    }
 }
     </style>
 </head>
@@ -264,7 +330,20 @@ hr {
     <div id="main">
         <p>My name is K S Sooraj, I'm a passionate UI/UX Designer who loves transforming ideas into visually appealing and user-friendly designs.</p>
         <p>My journey in the design world is fueled by curiosity and a constant desire to learn and grow.</p>
-        <p>When I'm not designing, you can find me exploring the latest design trends, experimenting with new tools, or enjoying a good laugh over some quirky humor. Let's create something amazing tog[...]
+        <p>When I'm not designing, you can find me exploring the latest design trends, experimenting with new tools, or enjoying a good laugh over some quirky humor. Let's create something amazing together!</p>
+        
+        
+        <section class="contact-section">
+            <h3>Contact Details</h3>
+            <ul class="contact-details-list">
+                <li><i>📧</i> Email: <a href="mailto:kssooraj123@gmail.com">kssooraj123@gmail.com</a></li>
+                <li><i>📱</i> Phone: <a href="tel:+919876543210">+91 98765 43210</a></li>
+                <li><i>🌐</i> Website: <a href="https://sooraj123kss.github.io/soorajweb/" target="_blank">sooraj123kss.github.io/soorajweb</a></li>
+                <li><i>💼</i> LinkedIn: <a href="https://www.linkedin.com/in/kssooraj1/" target="_blank">linkedin.com/in/kssooraj1</a></li>
+                <li><i>🏠</i> Location: Kochi, Kerala, India</li>
+            </ul>
+        </section>
+        <!-- End Contact Section -->
     </div>
     <hr style="border: 5px solid black; width: 100%; margin: 20px auto;" />
    <div id= "space">
@@ -289,19 +368,3 @@ hr {
     </footer>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
